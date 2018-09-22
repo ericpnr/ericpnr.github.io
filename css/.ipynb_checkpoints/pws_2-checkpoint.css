@@ -1,0 +1,524 @@
+/* url(../img/trianglify_1.svg); */
+
+:root{
+    --clr_mbg: #E5E5E5;
+    --clr_1: #A40823;
+    --clr_2: #CE092B;
+    --clr_3: #F50C34;
+    --clr_4: #F84356;
+    --bdr_rd: 30px;
+    --cnt0_bcg_clr: none;
+    --cnt0_bcg_pat: none;
+    --c0_l_bcg_clr: red;
+    --c0_l_bcg_pat: none;
+    --cnt1_bcg_clr: none;
+    --cnt1_bcg_pat: none;
+    --c1_l_bcg_clr: none;
+    --c1_l_bcg_pat: none;
+} 
+
+.bdy { margin: 0 }
+
+/******* Top Container*******/
+.cont0 {
+    position: relative;
+    background-color: var(--cnt0_bcg_clr); 
+    background: var(--cnt0_bcg_pat);
+}
+
+.c0_l{
+    position: absolute;
+    z-index : 1;
+    position: relative;
+    height: 100%;
+    background-color: var(--c0_l_bcg_clr);
+    background: var(--c0_l_bcg_pat);
+    left: 2.5%;
+    width: 97.5%;
+    opacity: 1;
+}
+
+.img0 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+    border-radius: var(--bdr_rd) 0 0 var(--bdr_rd); 
+    z-index: 2;
+}
+
+#center {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4em;
+    color: white;
+    z-index: 3;
+}
+
+/*******Nav Bar********/
+
+
+.navbar2 {
+  z-index: 10;
+  color:black ;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  font-size: 14pt;
+  background-color: var(--clr_mbg);
+  text-align: center;
+}
+    
+a:link, a:visited {
+    background-color: none /* var(--clr_1); */
+    border-radius: 1px;
+    color: black; /*var(--clr_mbg);*/
+    border: 2px solid black;
+    margin-right: 20px;
+    padding: 10px 10px;
+    width: 10%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: black;
+    color: var(--clr_mbg);
+}
+
+/******* Container 1 *******/
+
+.cont1 {
+    position: relative;
+    width: 100% ;
+    height: 700px;
+    background-color: var(--clr_mbg);
+    opacity: 1
+}
+
+.c1_l1 {
+    position:absolute;
+    left: 0;
+    top: 0%;
+    width: 65%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: justify;
+    height:90% ;
+    background-color: none;
+    font-size: 20pt;
+    border-radius: 0 var(--bdr_rd) var(--bdr_rd) 0;
+    border-style: outset;
+    border-width: 0px;
+    z-index: 2;
+}
+
+.c1_l2 {
+    position:absolute;
+    left: 0;
+    top: 0%;
+    width: 75%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: justify;
+    height:90% ;
+    background: url(../img/trianglify.svg);
+    /*background-color: var(--clr_1);*/
+    font-size: 20pt;
+    border-radius: 0 var(--bdr_rd) var(--bdr_rd) 0;
+    border-style: outset;
+    border-width: 0px;
+    z-index: 1;
+    box-shadow: 5px 5px grey;
+}
+
+.c1_r {
+    position:absolute;
+    right: 2.5%;
+    width: 25%;
+    top: 0;
+    padding-right: 0% ;
+    padding-left: 0%;
+    text-align: justify;
+    height: 60%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top:10%;
+    font-size: 20pt;
+    border-radius: var(--bdr_rd) var(--bdr_rd) var(--bdr_rd) var(--bdr_rd);
+    z-index: 3;
+    overflow: hidden;
+}
+
+.img1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 140%;
+    height: auto;
+    opacity: 1;
+    border-radius: var(--bdr_rd)
+}
+
+/******* Container 2 *******/
+
+.cont2 {
+    position: relative;
+    width: 100% ;
+    height: 700px;
+    background-color: var(--clr_mbg);
+}
+
+.c2_l {
+    position:absolute;
+    left: 2.5%;
+    width: 25%;
+    top: 10%;
+    padding-right: 0% ;
+    padding-left: 0%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: justify;
+    height: 90%;
+    background-color: none;
+    font-size: 20pt;
+    border-radius: var(--bdr_rd) var(--bdr_rd) var(--bdr_rd) var(--bdr_rd);
+    z-index: 3;
+}
+
+.img2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    border-radius: var(--bdr_rd)
+}
+
+.c2_r1 { 
+    position:absolute;
+    right: 0;
+    width: 65%;
+    top: 0%;
+    padding-right: 2.5%;
+    padding-left: 2.5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: justify;
+    height: 90%;
+    background-color: none;
+    font-size: 20pt;
+    border-radius: var(--bdr_rd) 0 0 var(--bdr_rd); 
+    z-index: 2}
+
+.c2_r2 { 
+    position:absolute;
+    right: 0;
+    width: 85%;
+    top: 0%;
+    padding-right: 2.5%;
+    padding-left: 2.5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: justify;
+    height: 90%;
+    background: url(../img/trianglify_1.svg);
+    font-size: 20pt;
+    border-radius: var(--bdr_rd) 0 0 var(--bdr_rd);
+    z-index: 1;
+    box-shadow: 5px 5px 5px grey;
+}
+
+/******* Container 3 *******/
+
+.cont3 {
+    position: relative;
+    width: 100% ;
+    height: 700px;
+    background-color: var(--clr_mbg);
+}
+
+.c3_l1 {
+    position:absolute;
+    left: 0;
+    width: 65%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: justify;
+    height:90% ;
+    background-color: none;
+    font-size: 20pt;
+    border-radius: 0 var(--bdr_rd) var(--bdr_rd) 0;
+    z-index: 2;
+}
+
+.c3_l2 {
+    position:absolute;
+    left: 0;
+    width: 75%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: justify;
+    height:90% ;
+    /*background-color: var(--clr_3);*/
+    background: url(../img/trianglify.svg);
+    font-size: 20pt;
+    border-radius: 0 var(--bdr_rd) var(--bdr_rd) 0;
+    z-index: 1;
+    box-shadow: 5px 5px grey;
+}
+
+.c3_r1 {
+    position:absolute;
+    right: 2.5%;
+    width: 25%;
+    padding-right: 2.5% ;
+    padding-left: 2.5%;
+    text-align: justify;
+    height: 90%;
+    margin-top: 3%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: none;
+    font-size: 20pt;
+    border-radius: var(--bdr_rd) var(--bdr_rd) var(--bdr_rd) var(--bdr_rd);
+    z-index: 3;
+}
+
+.img3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    border-radius: var(--bdr_rd)
+}
+
+
+/******* Container 4 *******/
+
+.cont4 {
+    position: relative;
+    width: 100% ;
+    height: 700px;
+    background-color: var(--clr_mbg);
+}
+
+.c4_l {
+    position:absolute;
+    left: 2.5%;
+    width: 25%;
+    top: 10%;
+    padding-right: 0% ;
+    padding-left: 0%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: justify;
+    height: 90%;
+    background-color: none;
+    font-size: 20pt;
+    border-radius: var(--bdr_rd) var(--bdr_rd) var(--bdr_rd) var(--bdr_rd);
+    z-index: 3;
+}
+
+.img4 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    border-radius: var(--bdr_rd)
+}
+
+
+.c4_r1 { 
+    position:absolute;
+    right: 0;
+    width: 65%;
+    top: 0%;
+    padding-right: 2.5%;
+    padding-left: 2.5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: justify;
+    height: 90%;
+    background-color: none;
+    font-size: 20pt;
+    border-radius: var(--bdr_rd) 0 0 var(--bdr_rd); 
+    z-index: 2}
+
+.c4_r2 { 
+    position:absolute;
+    right: 0;
+    width: 85%;
+    top: 0%;
+    padding-right: 2.5%;
+    padding-left: 2.5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: justify;
+    height: 90%;
+    background: url(../img/trianglify_1.svg);
+    font-size: 20pt;
+    border-radius: var(--bdr_rd) 0 0 var(--bdr_rd);
+    z-index: 1;
+    box-shadow: 5px 5px 5px grey;}
+
+/******* Container 5 *******/
+
+.cont5 {
+    position: relative;
+    width: 100% ;
+    height: 700px;
+    background-color: var(--clr_mbg);
+}
+
+.c5_l1 {
+    position:absolute;
+    left: 0;
+    width: 65%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: justify;
+    height:90% ;
+    background-color: none;
+    font-size: 20pt;
+    border-radius: 0 var(--bdr_rd) var(--bdr_rd) 0;
+    z-index: 2;
+}
+
+.c5_l2 {
+    position:absolute;
+    left: 0;
+    width: 75%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: justify;
+    height:90% ;
+    /*background-color: var(--clr_3);*/
+    background: url(../img/trianglify.svg);
+    font-size: 20pt;
+    border-radius: 0 var(--bdr_rd) var(--bdr_rd) 0;
+    z-index: 1;
+    box-shadow: 5px 5px grey;
+}
+
+.c5_r1 {
+    position:absolute;
+    right: 2.5%;
+    width: 25%;
+    padding-right: 2.5% ;
+    padding-left: 2.5%;
+    text-align: justify;
+    height: 90%;
+    margin-top: 3%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: none;
+    font-size: 20pt;
+    border-radius: var(--bdr_rd) var(--bdr_rd) var(--bdr_rd) var(--bdr_rd);
+    z-index: 3;
+}
+
+.img5 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    border-radius: var(--bdr_rd)
+}
+
+/******* Container 6 *******/
+
+.cont6 {
+    position: relative;
+    width: 100% ;
+    height: 700px;
+    background-color: var(--clr_mbg);
+}
+
+.c6_l {
+    position:absolute;
+    left: 2.5%;
+    width: 25%;
+    top: 10%;
+    padding-right: 0% ;
+    padding-left: 0%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: justify;
+    height: 90%;
+    background-color: none;
+    font-size: 20pt;
+    border-radius: var(--bdr_rd) var(--bdr_rd) var(--bdr_rd) var(--bdr_rd);
+    z-index: 3;
+}
+
+.c6_r1 { 
+    position:absolute;
+    right: 0;
+    width: 65%;
+    top: 0%;
+    padding-right: 2.5%;
+    padding-left: 2.5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: justify;
+    height: 90%;
+    background-color: none;
+    font-size: 20pt;
+    border-radius: var(--bdr_rd) 0 0 var(--bdr_rd); 
+    z-index: 2}
+
+.c6_r2 { 
+    position:absolute;
+    right: 0;
+    width: 85%;
+    top: 0%;
+    padding-right: 2.5%;
+    padding-left: 2.5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: justify;
+    height: 90%;
+    background: url(../img/trianglify_1.svg);
+    font-size: 20pt;
+    border-radius: var(--bdr_rd) 0 0 var(--bdr_rd);
+    z-index: 1;
+    box-shadow: 5px 5px grey;
+}
+
+
+
+.img6 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    border-radius: var(--bdr_rd)
+}

@@ -1,0 +1,328 @@
+:root{
+    --clr_mbg: #F7568C;
+    --clr_1: #FBE666;
+    --clr_2: #FAB762;
+    --clr_3: #F9865E;
+    --clr_4: #F85860;
+}
+
+.bdy { margin: 0 }
+.cont0 {
+    position: relative;
+    background-color: #FBE666;
+}
+.c0_l{
+    z-index: 9;
+    position: absolute;
+    height: 100%;
+    background-color:var(--clr_mbg);
+    left: 0;
+    width: 10%;
+    opacity: 0
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    opacity: 0.7}
+
+.center {
+    position: absolute;
+    top:50%;
+    left: 10%;
+    text-align: left;
+    transform: translate(-50%, -50%);
+    font-size: 68px;
+    color:  white;
+}
+
+.navbar2 {
+  z-index: 10;
+  color:black ;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 10px;
+  font-size: 14pt;
+  background-color: var(--clr_mbg);
+  text-align: center;
+}
+
+
+a:link, a:visited {
+    background-color: none;
+    border-radius: 5px;
+    color: white;
+/*    border: 0px solid black;*/
+    margin-right: 20px;
+/*padding: 10px 20px;*/
+    width: 155px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: white;
+    color: black;
+}
+
+.cont1 {
+    position: relative;
+    width: 100% ;
+    height: 700px;
+    background-color: var(--clr_mbg);
+}
+
+.c1_l {
+    position:absolute;
+    left: 0;
+    top: 0%;
+    width: 65%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: justify;
+    height:90% ;
+    background-color: var(--clr_1);
+    font-size: 20pt;
+    border-radius: 0 40px 40px 0;
+    border-right-style: solid;
+    border: 6px
+
+}
+
+.c1_r {
+    position:absolute;
+    right: 0;
+    width: 25%;
+    padding-right: 2.5% ;
+    padding-left: 2.5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: justify;
+    height: 90%;
+    background-color: var(--clr_mbg);
+    font-size: 20pt;
+}
+.c1_r2 {
+    position:absolute;
+    right: 2.5%;
+    width: 20%;
+    top: 0;
+    padding-right: 2.5% ;
+    padding-left: 2.5%;
+    text-align: justify;
+    height: 90%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    font-size: 20pt;
+    border-radius: 40px 40px 40px 40px;
+}
+
+.cont2 {
+    position: relative;
+    width: 100% ;
+    height: 700px;
+    background-color: var(--clr_mbg);
+}
+
+.c2_l {
+    position:absolute;
+    left: 0;
+    height: 100%;
+    width: 25%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20pt;
+    background-color: var(--clr_mbg)
+}
+
+.c2_l2 {
+    position:absolute;
+    left: 2.5%;
+    width: 20%;
+    top: 0%;
+    padding-right: 2.5% ;
+    padding-left: 2.5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: justify;
+    height: 90%;
+    background-color: white;
+    font-size: 20pt;
+    border-radius: 40px 40px 40px 40px;
+}
+
+.c2_r {
+    position:absolute;
+    right: 0;
+    width: 65%;
+    top: 0%;
+    padding-right: 2.5%;
+    padding-left: 2.5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: justify;
+    height: 90%;
+    background-color: var(--clr_2);
+    font-size: 20pt;
+    border-radius: 40px 0 0 40px }
+
+.cont3 {
+    position: relative;
+    width: 100% ;
+    height: 700px;
+    background-color: var(--clr_mbg);
+}
+
+.c3_l {
+    position:absolute;
+    left: 0;
+    width: 65%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: justify;
+    height:90% ;
+    background-color: var(--clr_3);
+    font-size: 20pt;
+    border-radius: 0 40px 40px 0;
+}
+
+.c3_r {
+    position:absolute;
+    right: 2.5%;
+    width: 20%;
+    top: 0;
+    padding-right: 2.5% ;
+    padding-left: 2.5%;
+    text-align: justify;
+    height: 90%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    font-size: 20pt;
+    border-radius: 40px 40px 40px 40px;
+}
+
+
+
+.cont4 {
+    position: relative;
+    width: 100% ;
+    height: 700px;
+    background-color: var(--clr_mbg);
+}
+
+.c4_l {
+    position:absolute;
+    left: 2.5%;
+    width: 20%;
+    top: 0%;
+    padding-right: 2.5% ;
+    padding-left: 2.5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: justify;
+    height: 90%;
+    background-color: white;
+    font-size: 20pt;
+    border-radius: 40px 40px 40px 40px;
+}
+
+.c4_r {
+    position:absolute;
+    right: 0;
+    width: 65%;
+    padding-right: 2.5%;
+    padding-left: 2.5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: justify;
+    height: 90%;
+    background-color: var(--clr_4);
+    font-size: 20pt;
+    border-radius: 40px 0 0 40px }
+
+.cont5 {
+    position: relative;
+    width: 100% ;
+    height: 700px;
+    background-color: var(--clr_mbg);
+}
+
+.c5_l {
+    position:absolute;
+    left: 0;
+    width: 65%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: justify;
+    height:90% ;
+    background-color: var(--clr_1);
+    font-size: 20pt;
+    border-radius: 0 40px 40px 0;
+}
+
+.c5_r {
+    position:absolute;
+    right: 2.5%;
+    width: 20%;
+    top: 0;
+    padding-right: 2.5% ;
+    padding-left: 2.5%;
+    text-align: justify;
+    height: 90%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    font-size: 20pt;
+    border-radius: 40px 40px 40px 40px;
+}
+
+.cont6 {
+    position: relative;
+    width: 100% ;
+    height: 700px;
+    background-color: var(--clr_mbg);
+}
+
+.c6_l{
+    position:absolute;
+    left: 2.5%;
+    width: 20%;
+    top: 0%;
+    padding-right: 2.5% ;
+    padding-left: 2.5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: justify;
+    height: 90%;
+    background-color: white;
+    font-size: 20pt;
+    border-radius: 40px 40px 40px 40px;
+}
+
+.c6_r {
+    position:absolute;
+    right: 0;
+    width: 65%;
+    padding-right: 2.5%;
+    padding-left: 2.5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: justify;
+    height: 90%;
+    background-color: var(--clr_4);
+    font-size: 20pt;
+    border-radius: 40px 0 0 40px }
