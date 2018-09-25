@@ -7,67 +7,81 @@
   <script type="text/javascript" src = "javascript/pws_1.js" >
   </script>
 </head>
-
-<body class=bdy>
   <div class=cont0>
 <!--    <div class=c0_l>
       <img src="img/beautiful-cold-forest.jpg" class="img0">
     </div> -->
     <div onload="iam_out()" id="center"> Hi, I am Eric Penner </div>
   </div>
-  <nav class="navbar2">
-    <a href="#anch1"> About Me </a>
-    <a href="#anch2"> Resume </a>
-    <a href="#anch3"> CV </a>
-    <a href="#c4_r1"> Research </a>
-    <a href="#anch5"> Teaching </a>
-    <a href="#anch6"> Consulting </a>
-  </nav>
+  <body class=bdy>
+    <div style="position:absolute;width:100%;height:5vh;background-color:black">
+    <nav class="navbar2">
+      <a href="#anch1"> A </a>
+      <a href="#anch2"> N </a>
+      <a href="#anch3"> C </a>
+      <a href="#anch4"> R </a>
+      <a href="#anch5"> T </a>
+      <a href="#anch6"> P </a>
+    </div>
+    </nav>
+
+
+
   <div id="cont1">
+    <div class=banner>
+      About Me
+    </div>
     <div id="anch1"></div>
-    <div id="c1_l1">
-      <h3> About Me</h3> Lorem ipsum dolor sit amet, consectetur adipiscing
+    <div class=wl_1>
+      <div class=wl_2>
+      Lorem ipsum dolor sit amet, consectetur adipiscing
       elit. Vestibulum condimentum blandit nibh a faucibus. Morbi imperdiet
       nulla libero, quis luctus nisl ultricies eu. Maecenas a dignissim eros.
       Quisque sed efficitur justo, ac viverra nunc. Nunc lacinia urna facilisis
       nunc venenatis faucibus. Aliquam ullamcorper ipsum nec nisl elementum, ut
       sagittis tellus tincidunt. Cras pharetra lorem eget placerat congue.
     </div>
-    <div id="c1_l2">
     </div>
-    <div id="c1_r">
+<!--    <div id="c1_r">
       <img src="img/yawn.jpg" id="img1">
-    </div>
+    </div> -->
   </div>
 
   <!-- Container 2-->
 
   <div id="cont2">
+  <div class=banner>
+    Non Academic Work Experience
+  </div>
   <div id="anch2"></div>
-    <div id="c2_l">
+<!--    <div id="c2_l">
       <img src="img/sandy_beach.jpg" id="img2">
-    </div>
-    <div id="c2_r1">
-              <h3> Non Academic Work Experience</h3>
-      <div id="c2_r2">
+    </div> -->
+    <div class=wr_1>
+      <div class=wr_2 style="">
         <div class=subtitle>
           RBN Energy, Consultant, Boulder, CO
         </div>
         <div class=indt_1>
           Developing software to find optimal data presentation / clustering configurations using combinatorial optimization procedures such as random search and genetic algorithms, with potential for the future incorporation of a position auction. I have  written energy industry articles discussing the economics of shale oil production and decline curves in both domestic and international markets, natural gas storage and transportation, and the petrochemical industry. Additionally, I have prepared presentation materials, and assisted on consulting projects.
         </div><br>
+      </div>
+      <div class=wr_2 style="margin-left:7.5%;width:85%">
         <div class=subtitle>
           Jacobs Engineering Group, Mechanical Engineer, Golden, CO
         </div>
         <div class=indt_1>
           Completed design, procurement, and construction phases of several large capital projects in the oil, natural gas, food, and beverage industries. Effectively used my knowledge of the design and code requirements for pressure vessels, pumps, compressors, heat exchangers, fired heaters, distillation columns, dehydration units, pipelines, process piping, water treatment systems, and amine systems toward successful project completion. Lead mechanical engineer for multi-million dollar projects for BP America and MillerCoors LLC.  Successfully completed projects for Questar, Frontier Refining, BP, Exxon Mobil, MillerCoors, Integrys, and Enbridge Inc. Most recently held the position of Project Engineer on the Husky Diluent Metering Project.
         </div><br>
+      </div>
+        <div class=wr_2 style="margin-left:12.5%;width:80%">
         <div class=subtitle>
           US Army, Sergeant
         </div>
         <div class=indt_1>
           Reconnaissance Specialist and Squad Leader spending significant time in dynamic and challenging environments such as South Korea and Bosnia Herzegovina. Seven months service NATO peacekeeping forces in Bosnia Herzegovina specializing in public relations.  Selected for promotion ahead of peers throughout decorated service record due to personal integrity, dedication to hard work, attention to detail, enforcement of safety, and peer mentorship.
-        </div>
+        </div><br>
+      </div>
     </div>
   </div>
 </div>
@@ -75,13 +89,15 @@
 <!-- Container 3 -->
 
   <div class=cont3>
-    <div class=c3_r1>
-      <img src="img/snow_above.jpg" class="img3">
+    <div class=banner>
+      Curriculum Vitae
     </div>
+<!--    <div class=c3_r1>
+      <img src="img/snow_above.jpg" class="img3">
+    </div> -->
     <div id="anch3"></div>
-      <div id="c3_l1">
-        <div id="c3_l2">
-        <h3> Curriculum Vitae </h3>
+      <div class=wl_1>
+        <div class=wl_2 style="width:60%;margin-right:30%">
           <div class=subtitle>
               Current Position
           </div>
@@ -102,7 +118,9 @@
           <div class=indt_1>
            M.A., Economics, University of Colorado at Boulder <br>
            B.S., Mechanical Engineering, University of Wyoming <br>
-         </div><br>
+         </div>
+       </div>
+       <div class=wr_2 style="padding-right:15%;width=75%">
           <div class=subtitle>
            Works in Progress
           </div>
@@ -130,7 +148,8 @@ Queuing and Capital Investment
          </div>
          <div class=indt_2>
 I simulate a network of suppliers and distributors over time where distributors must resupply periodically under stochastic inelastic demand conditions with terminals who also have to resupply under stochastic supply shortages. Distributors have  a choice of investing in either permanent capital (storage) or flexible capital (trucks for resupply).
-</div><br>
+</div></div>
+      <div class=wl_2 style="width:50%;margin-right:50%;padding-left:15%">
       <div class=subtitle>
          Fellowships, Honors, and Awards
       </div>
@@ -159,15 +178,16 @@ I simulate a network of suppliers and distributors over time where distributors 
   </div>
 </div>
 <!-- *Container 4*/ -->
-
   <div class=cont4>
-  <div id="anch4"></div>
-    <div class=c4_l>
-      <img src="img/sandy_beach.jpg" class="img4">
+    <div class=banner>
+      Research Interests
     </div>
-    <div id="c4_r1">
-      <div id="c4_r2">
-        <h3> Research Interests </h3>
+  <div id="anch4"></div>
+<!--    <div class=c4_l>
+      <img src="img/sandy_beach.jpg" class="img4">
+    </div>  -->
+    <div class=wl_1>
+      <div class=wl_2>
         <div class=subtitle>
           Developing Statistical Tools to Address the Unique Challenges of Big Data
         </div>
@@ -181,7 +201,8 @@ I simulate a network of suppliers and distributors over time where distributors 
           to approach their research question so that their conclusions generalize
           from sample to population.
         </div>
-        <br>
+      </div>
+      <div class=wr_2>
         <div class=subtitle>
           Developing Estimators That Account for Human Cognitive Processes
         </div>
@@ -196,7 +217,9 @@ I simulate a network of suppliers and distributors over time where distributors 
           actually happens.   I endeavor to incorporate the ever advancing
           understanding of these processes from psychology and neuroscience into
           robust estimation techniques.
-        </div><br>
+        </div>
+      </div>
+      <div class=wl_2>
         <div class=subtitle>
           Capital Investment Under Uncertainty, Product Switching, and Congestion Constraints
         </div>
@@ -216,11 +239,17 @@ I simulate a network of suppliers and distributors over time where distributors 
       <br>
     </div>
   </div>
+
+<!-- Container 5 -->
+
+
   <div class=cont5>
+    <div class=banner>
+      Teaching
+    </div>
   <div id="anch5"></div>
-    <div id="c5_l1">
-      <div id="c5_l2">
-        <h3> Teaching </h3>
+    <div class=wl_1>
+      <div class=wr_2>
         <div class=subtitle>
           University of California, Berkeley, School of Information
         </div>
@@ -241,7 +270,8 @@ causal inference and includes a discussion of omitted variables. At the end, we 
 that arise in the process of specifying linear models. Throughout the course, students will practice analyzing
 real-world data using the open-source language, R.
         </div>
-        <br>
+      </div>
+      <div class=wl_2>
         <div class=subtitle>
           University of Colorado at Boulder, Department of Economics
         </div>
@@ -261,7 +291,9 @@ hypothesis testing. Emphasis is on both theory and application.
           The purpose of this course (and the following course) is to equip you with the necessary
 mathematical knowledge to be successful in the Economics courses given at the University of
 Colorado at Boulder.
-</div> <br>
+        </div>
+        </div>
+        <div class=wr_2>
         <div class=subtitle>
           University of Colorado at South Denver, Department of Economics
         </div>
@@ -278,21 +310,23 @@ other hand, studying economics also develops reasoning and analytical skills.
         </div>
       </div>
     </div>
-    <div class=c5_r1>
+<!--    <div class=c5_r1>
       <img src="img/sandy_beach.jpg" class="img5">
-    </div>
+    </div> -->
   </div>
 
 <!-- Container 6 -->
 
   <div class=cont6>
-  <div id="anch6"></div>
-    <div class=c6_l>
-      <img src="img/sandy_beach.jpg" class="img6">
+    <div class=banner>
+      Patents Pending
     </div>
-    <div id="c6_r1">
-      <div id="c6_r2">
-      <h3> Patents Pending </h3>
+  <div id="anch6"></div>
+<!--    <div class=c6_l>
+      <img src="img/sandy_beach.jpg" class="img6">
+    </div> -->
+    <div class=wr_1>
+      <div class=wr_2>
         <div class=subtitle>
           Information Visualization Display Using Associative Clustered Tiling and Tesselation
         </div>
