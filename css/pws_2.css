@@ -206,7 +206,7 @@ a:hover, a:active {
     text-align: justify;
   /*    height: 45vw; */
     background-color: var(--clr_1);
-    opacity: 0.75;
+    opacity: 0.95;
     font-size: 20pt;
     color:white;
   /*  border-radius: var(--bdr_rd) 0 0 var(--bdr_rd);*/
@@ -495,7 +495,7 @@ a:hover, a:active {
 .cont4 {
     position: relative;
     width: 100% ;
-    height: calc(1500px - 25vw);
+    height: calc(1300px - 25vw);
     background-color: var(--clr_mbg);
     min-width: 650px;
     background-image: url("../img/flatirons.jpg");
@@ -677,7 +677,7 @@ a:hover, a:active {
 .cont6 {
   position: relative;
   width: 100% ;
-  height: calc(1500px - 25vw);
+  height: calc(1300px - 25vw);
   background-color: var(--clr_mbg);
   min-width: 650px;
   background-image: url("../img/abstract-curve.jpg");
