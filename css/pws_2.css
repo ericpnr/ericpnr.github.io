@@ -126,7 +126,7 @@ a:hover, a:active {
   position: sticky;
   width: 100%;
   top: 0;
-  height: 10vh;
+  height: 60px;
   padding-left: 1%;
   font-size: 3em;
   background-color: black;
@@ -137,12 +137,12 @@ a:hover, a:active {
   position:absolute;
   display:block;
   width: 100%;
-  top: 10vw;
+  top: 60px;
 /*    bottom:20%; */
   min-height: 500px;
   padding-right: 0%;
   padding-left: 0%;
-  padding-top: 10px;
+  padding-top: 15px;
   padding-bottom: 10px;
   text-align: justify;
   /*height: 90%;*/
@@ -182,12 +182,12 @@ a:hover, a:active {
     position:absolute;
     display:block;
     width: 100%;
-    top: 10vw;
+    top: 60px;
   /*    bottom:20%; */
     min-height: 500px;
     padding-right: 0%;
     padding-left: 0%;
-    padding-top: 10px;
+    padding-top: 15px;
     padding-bottom: 10px;
     text-align: justify;
     /*height: 90%;*/
@@ -271,7 +271,7 @@ a:hover, a:active {
 /* Container 1, Top Inner Container*/
 
 #c1_top_inner_cont{
-  height:60vh; 
+  height:60vh;
   width:100%;
   overflow:hidden;
   background-color:white;
