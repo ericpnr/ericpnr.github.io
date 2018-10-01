@@ -21,7 +21,11 @@
 * {box-sizing:border-box}
 
 .bdy { margin: 0;
-        min-width:650px}
+        min-width:700px;
+        font-family: 'Fjalla One', sans-serif;}
+        /*
+        font-family: 'Kanit', sans-serif;
+        font-family:'Abril Fatface',regular*/
 
 .clearfix::after {
   content:"";
@@ -40,6 +44,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow:hidden;
 /*    background: var(--cnt0_bcg_pat);*/
 }
 
@@ -80,12 +85,12 @@
 
 /*******Nav Bar********/
 .navbar2 {
-  position:absolute;
+  position:relative;
   z-index: 11;
   color: white ;
   position: -webkit-sticky;
   position: sticky;
-  top: 0%;
+  top: 0;
   right:0;
   width:30%;
   margin-left:60%;
@@ -145,9 +150,10 @@ a:hover, a:active {
   text-align: justify;
   /*height: 90%;*/
 /*  background: url(../img/trianglify_1.svg);*/
-  font-size: 20pt;
+  font-size: 26pt;
   /*border-radius: var(--bdr_rd) 0 0 var(--bdr_rd);*/
   z-index: 1;
+  overflow:hidden;
 /*box-shadow: 5px 5px 5px grey;*/}
 
 
@@ -170,7 +176,7 @@ a:hover, a:active {
 /*    height: 45vw; */
   background-color: var(--clr_1);
   opacity: 0.85;
-  font-size: 20pt;
+  font-size: 26pt;
   color: white;
 /*  border-radius: var(--bdr_rd) 0 0 var(--bdr_rd);*/
   z-index: 2 }
@@ -189,9 +195,10 @@ a:hover, a:active {
     text-align: justify;
     /*height: 90%;*/
   /*  background: url(../img/trianglify_1.svg);*/
-    font-size: 20pt;
+    font-size: 26pt;
     /*border-radius: var(--bdr_rd) 0 0 var(--bdr_rd);*/
     z-index: 1;
+    overflow:hidden;
   /*box-shadow: 5px 5px 5px grey;*/}
 
 
@@ -215,7 +222,7 @@ a:hover, a:active {
   /*    height: 45vw; */
     background-color: var(--clr_1);
     opacity: 0.95;
-    font-size: 20pt;
+    font-size: 26pt;
     color:white;
   /*  border-radius: var(--bdr_rd) 0 0 var(--bdr_rd);*/
     z-index: 2 }
@@ -223,7 +230,7 @@ a:hover, a:active {
 
 
 
-/******* Container 1 *******/
+/******* Container 1 About Me *******/
 
 #cont1 {
   position:relative;
@@ -271,6 +278,7 @@ a:hover, a:active {
   font-size:1.75em;
   background-color:white;
   display:inline-block;
+  opacity:0.8;
 }
 
 #c1_profile_img_cont {
@@ -307,12 +315,12 @@ a:hover, a:active {
   object-fit:cover;
 }
 
-/******* Container 2 *******/
+/******* Container 2 Non Academic Work *******/
 
 #cont2 {
   position: relative;
   width: 100% ;
-  height: calc(1300px - 25vw);
+  height: calc(1800px - 25vw);
   min-height: 100vh;
   background-color: var(--clr_mbg);
   min-width: 650px;
@@ -376,6 +384,7 @@ a:hover, a:active {
   font-size: 20pt;
   /*border-radius: var(--bdr_rd) 0 0 var(--bdr_rd);*/
   z-index: 1;
+  overflow: hidden;
 /*box-shadow: 5px 5px 5px grey;*/}
 
 #c2_wr2 {
@@ -398,12 +407,12 @@ a:hover, a:active {
   border-radius: var(--bdr_rd) 0 0 var(--bdr_rd);
   z-index: 2 }
 
-/******* Container 3 *******/
+/******* Container 3 CV*******/
 
 .cont3 {
   position: relative;
   width: 100% ;
-  height: calc(1700px - 15vw);
+  height: calc(2700px - 35vw);
   background-color: var(--clr_mbg);
   min-height:500px;
   background-color: var(--clr_mbg);
@@ -495,7 +504,7 @@ a:hover, a:active {
 .cont4 {
     position: relative;
     width: 100% ;
-    height: calc(1300px - 25vw);
+    height: calc(1900px - 35vw);
     background-color: var(--clr_mbg);
     min-width: 650px;
     background-image: url("../img/flatirons.jpg");
@@ -586,14 +595,14 @@ a:hover, a:active {
 .cont5 {
   position: relative;
   width: 100% ;
-  height: calc(1500px - 15vw);
+  height: calc(2300px - 25vw);
   background-color: var(--clr_mbg);
   min-width: 650px;
   background-image: url("../img/audience.jpg");
 /*  background-attachment: fixed;*/
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:cover;
 }
 
 #anch5{
@@ -677,7 +686,7 @@ a:hover, a:active {
 .cont6 {
   position: relative;
   width: 100% ;
-  height: calc(1300px - 25vw);
+  height: calc(1800px - 25vw);
   background-color: var(--clr_mbg);
   min-width: 650px;
   background-image: url("../img/abstract-curve.jpg");
