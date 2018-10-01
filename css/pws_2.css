@@ -23,9 +23,6 @@
 .bdy { margin: 0;
         min-width:700px;
         font-family: 'Fjalla One', sans-serif;}
-        /*
-        font-family: 'Kanit', sans-serif;
-        font-family:'Abril Fatface',regular*/
 
 .clearfix::after {
   content:"";
@@ -129,7 +126,7 @@ a:hover, a:active {
   position: sticky;
   width: 100%;
   top: 0;
-  height: 8vh;
+  height: 10vh;
   padding-left: 1%;
   font-size: 3em;
   background-color: black;
@@ -227,8 +224,24 @@ a:hover, a:active {
   /*  border-radius: var(--bdr_rd) 0 0 var(--bdr_rd);*/
     z-index: 2 }
 
+  .subtitle {
+      position: relative;
+      font-size: 0.88em;
+    }
 
+  .indt_1 {
+      position: relative;
+      padding-top:0.5%;
+      padding-left: 2.5%;
+      font-size: 0.75em;
+    }
 
+  .indt_2 {
+      position: relative;
+      padding-top:1%;
+      padding-left: 7.5%;
+      font-size: 0.75em;
+    }
 
 /******* Container 1 About Me *******/
 
@@ -237,13 +250,13 @@ a:hover, a:active {
   width: 100% ;
   height:calc(1300px - 15vw);
   min-height:600px;
-  background-color: var(--clr_mbg);
+  background-color: black;
   min-width: 650px;
-  background-image: url("../img/fall_paint.jpg");
+/*  background-image: url("../img/fall_paint.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover;*/
 }
 
 #anch1{
@@ -258,7 +271,7 @@ a:hover, a:active {
 /* Container 1, Top Inner Container*/
 
 #c1_top_inner_cont{
-  height:60vh;
+  height:60vh; 
   width:100%;
   overflow:hidden;
   background-color:white;
@@ -315,7 +328,7 @@ a:hover, a:active {
   object-fit:cover;
 }
 
-/******* Container 2 Non Academic Work *******/
+/******* Container 2 Professional Exp *******/
 
 #cont2 {
   position: relative;
@@ -340,22 +353,6 @@ a:hover, a:active {
   z-index:10;
 }
 
-#c2_l {
-    position:absolute;
-    left: 2.5%;
-    width: 25%;
-    top: 15%;
-    padding-right: 0% ;
-    padding-left: 0%;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    text-align: justify;
-    background-color: none;
-    font-size: 20pt;
-    border-radius: var(--bdr_rd) var(--bdr_rd) var(--bdr_rd) var(--bdr_rd);
-    z-index: 0;
-}
-
 #img2 {
     display: block;
     margin-left: auto;
@@ -365,47 +362,6 @@ a:hover, a:active {
     opacity: 1;
     border-radius: var(--bdr_rd)
 }
-
-#c2_wr1 {
-  position:absolute;
-  display:block;
-  right: 0;
-  width: 75%;
-  top: 10vw;
-/*    bottom:20%; */
-  min-height: 500px;
-  padding-right: 2.5%;
-  padding-left: 2.5%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: justify;
-  /*height: 90%;*/
-/*  background: url(../img/trianglify_1.svg);*/
-  font-size: 20pt;
-  /*border-radius: var(--bdr_rd) 0 0 var(--bdr_rd);*/
-  z-index: 1;
-  overflow: hidden;
-/*box-shadow: 5px 5px 5px grey;*/}
-
-#c2_wr2 {
-  position:relative;
-  display: inline-block;
-  right: 0%;
-  width: 95%;
-/*    top: 5%; */
-/*  bottom:20%; */
-  min-height: 500px;
-  padding-right: 2.5%;
-  padding-left: 5%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: justify;
-/*    height: 45vw; */
-  background-color: var(--clr_1);
-  opacity: 0.75;
-  font-size: 20pt;
-  border-radius: var(--bdr_rd) 0 0 var(--bdr_rd);
-  z-index: 2 }
 
 /******* Container 3 CV*******/
 
@@ -432,62 +388,6 @@ a:hover, a:active {
   z-index:10;
 }
 
-#c3_l1{
-    position:absolute;
-    display:block;
-    left: 0;
-    width: 75%;
-    top: 10vw;
-/*    bottom:20%; */
-    min-height: 500px;
-    padding-right: 2.5%;
-    padding-left: 2.5%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: justify;
-    /*height: 90%;*/
-    background: url(../img/trianglify_1.svg);
-    font-size: 20pt;
-    border-radius:  0 var(--bdr_rd) var(--bdr_rd) 0;
-    z-index: 1;
-    box-shadow: 5px 5px 5px grey;}
-
-
-#c3_l2{
-    position:relative;
-    display: inline-block;
-    left: 0;
-    width: 95%;
-/*    top: 5%; */
-  /*  bottom:20%; */
-    min-height: 500px;
-    padding-right: 2.5%;
-    padding-left: 5%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: justify;
-/*    height: 45vw; */
-    background-color: none;
-    font-size: 20pt;
-    border-radius: 0 var(--bdr_rd) var(--bdr_rd) 0;
-    z-index: 2}
-
-.c3_r1 {
-    position:absolute;
-    right: 2.5%;
-    height:60%;
-    padding-right: 2.5% ;
-    padding-left: 2.5%;
-    text-align: justify;
-    margin-top: 3%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: none;
-    font-size: 20pt;
-    border-radius: var(--bdr_rd) var(--bdr_rd) var(--bdr_rd) var(--bdr_rd);
-    z-index: 0;
-}
-
 .img3 {
     display: block;
     margin-left: auto;
@@ -499,7 +399,7 @@ a:hover, a:active {
 }
 
 
-/******* Container 4 *******/
+/******* Container 4 Research *******/
 
 .cont4 {
     position: relative;
@@ -521,23 +421,6 @@ a:hover, a:active {
   background-color:var(--anch_clr);
   z-index:10;
 }
-.c4_l {
-    position:absolute;
-    display: inline-block;
-    left: 2.5%;
-    width: 25%;
-    top: 10%;
-    padding-right: 0% ;
-    padding-left: 0%;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    text-align: justify;
-    min-height: 450px;
-    background-color: none;
-    font-size: 20pt;
-    border-radius: var(--bdr_rd) var(--bdr_rd) var(--bdr_rd) var(--bdr_rd);
-    z-index: 0;
-}
 
 .img4 {
     display: block;
@@ -549,48 +432,7 @@ a:hover, a:active {
     border-radius: var(--bdr_rd)
 }
 
-#c4_r1{
-    position:absolute;
-    display:block;
-    right: 0;
-    width: 75%;
-    top: 20vw;
-/*    bottom:20%; */
-    min-height: 500px;
-    padding-right: 2.5%;
-    padding-left: 2.5%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: justify;
-    /*height: 90%;*/
-    background: url(../img/trianglify_1.svg);
-    font-size: 20pt;
-    border-radius: var(--bdr_rd) 0 0 var(--bdr_rd);
-    z-index: 1;
-    box-shadow: 5px 5px 5px grey;}
-
-#c4_r2{
-    position:relative;
-    display: inline-block;
-    right: 0%;
-    width: 95%;
-/*    top: 5%; */
-  /*  bottom:20%; */
-    min-height: 500px;
-    padding-right: 2.5%;
-    padding-left: 5%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: justify;
-/*    height: 45vw; */
-    background-color: none;
-    font-size: 20pt;
-    border-radius: var(--bdr_rd) 0 0 var(--bdr_rd);
-    z-index: 2}
-
-
-
-/******* Container 5 *******/
+/******* Container 5 Teaching*******/
 
 .cont5 {
   position: relative;
@@ -612,63 +454,6 @@ a:hover, a:active {
   top: 0%;
   background-color:var(--anch_clr);
   z-index:10;
-}
-
-#c5_l1{
-    position:absolute;
-    display:block;
-    left: 0;
-    width: 75%;
-    top: 10vw;
-/*    bottom:20%; */
-    min-height: 500px;
-    padding-right: 2.5%;
-    padding-left: 2.5%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: justify;
-    /*height: 90%;*/
-    background: url(../img/trianglify_1.svg);
-    font-size: 20pt;
-    border-radius:  0 var(--bdr_rd) var(--bdr_rd) 0;
-    z-index: 1;
-    box-shadow: 5px 5px 5px grey;}
-
-
-#c5_l2{
-    position:relative;
-    display: inline-block;
-    left: 0;
-    width: 95%;
-/*    top: 5%; */
-  /*  bottom:20%; */
-    min-height: 500px;
-    padding-right: 2.5%;
-    padding-left: 5%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: justify;
-/*    height: 45vw; */
-    background-color: none;
-    font-size: 20pt;
-    border-radius: 0 var(--bdr_rd) var(--bdr_rd) 0;
-    z-index: 2}
-
-.c5_r1 {
-    position:absolute;
-    right: 2.5%;
-    width: 25%;
-    top: 5%;
-    padding-right: 0% ;
-    padding-left: 0%;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    text-align: justify;
-    min-height: 450px;
-    background-color: none;
-    font-size: 20pt;
-    border-radius: var(--bdr_rd) var(--bdr_rd) var(--bdr_rd) var(--bdr_rd);
-    z-index: 0;
 }
 
 .img5 {
@@ -703,61 +488,6 @@ a:hover, a:active {
   background-color:var(--anch_clr);
   z-index:10;
 }
-.c6_l {
-    position:absolute;
-    left: 2.5%;
-    width: 25%;
-    top: 10%;
-    padding-right: 0% ;
-    padding-left: 0%;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    text-align: justify;
-    height: 90%;
-    background-color: none;
-    font-size: 20pt;
-    border-radius: var(--bdr_rd) var(--bdr_rd) var(--bdr_rd) var(--bdr_rd);
-    z-index: 0;
-}
-
-#c6_r1 {
-  position:absolute;
-  display:block;
-  right: 0;
-  width: 75%;
-  top: 20vw;
-/*    bottom:20%; */
-  min-height: 500px;
-  padding-right: 2.5%;
-  padding-left: 2.5%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: justify;
-  /*height: 90%;*/
-  background: url(../img/trianglify_1.svg);
-  font-size: 20pt;
-  border-radius: var(--bdr_rd) 0 0 var(--bdr_rd);
-  z-index: 1;
-  box-shadow: 5px 5px 5px grey;}
-
-#c6_r2 {
-  position:relative;
-  display: inline-block;
-  right: 0%;
-  width: 95%;
-/*    top: 5%; */
-/*  bottom:20%; */
-  min-height: 500px;
-  padding-right: 2.5%;
-  padding-left: 5%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: justify;
-/*    height: 45vw; */
-  background-color: none;
-  font-size: 20pt;
-  border-radius: var(--bdr_rd) 0 0 var(--bdr_rd);
-  z-index: 2}
 
 .img6 {
     display: block;
@@ -770,22 +500,3 @@ a:hover, a:active {
 }
 
 /*********** Document Stuff ************/
-
-.subtitle {
-  position: relative;
-  font-size: 0.88em;
-}
-
-.indt_1 {
-  position: relative;
-  padding-top:0.5%;
-  padding-left: 2.5%;
-  font-size: 0.75em;
-}
-
-.indt_2 {
-  position: relative;
-  padding-top:1%;
-  padding-left: 7.5%;
-  font-size: 0.75em;
-}
