@@ -22,7 +22,8 @@
 
 .bdy { margin: 0;
         min-width:700px;
-        font-family: 'Fjalla One', sans-serif;}
+        font-family: 'Fjalla One', sans-serif;
+      background-color:black}
 
 .clearfix::after {
   content:"";
@@ -33,13 +34,13 @@
 /******* Top Container*******/
 .cont0 {
     position: relative;
-    top:0;
+    top:-5vh;
     min-height:100vh;
 /*    background-color: var(--cnt0_bcg_clr);*/
     background-image: url("../img/beautiful-cold-forest.jpg");
     background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-position:center;
+    background-repeat:no-repeat;
     background-size: cover;
     overflow:hidden;
 /*    background: var(--cnt0_bcg_pat);*/
@@ -89,14 +90,15 @@
   position: sticky;
   top: 0;
   right:0;
-  width:30%;
-  margin-left:60%;
-  padding-right: 10%;
+  width:35%;
+  margin-left:65%;
+  padding-right: 5%;
   font-size: 1em;
   height:0%;
-  background-color: black;
+  background-color: none;
   text-align:right;
 }
+
 
 a:link, a:visited {
     background-color: none /* var(--clr_1); */
@@ -105,15 +107,18 @@ a:link, a:visited {
     border: 0px solid black;
     margin-right: 1%;
     padding: 1% 1%;
-    width: 3%;
+    width: 22px;
+    height: 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
 }
 
 a:hover, a:active {
-    background-color: black;
-    color: var(--clr_mbg);
+    background-color: none;
+    color: white;
+    transform: rotate(90deg);
+    white-space:nowrap;
 }
 
 /******* Banner *******/
