@@ -23,12 +23,22 @@
 .bdy { margin: 0;
         min-width:700px;
         font-family: 'Fjalla One', sans-serif;
-      background-color:black}
+        background-color:black}
 
 .clearfix::after {
   content:"";
   clear:both;
   display: table;
+}
+
+#load_screen {
+  position:absolute ;
+  height: 100%;
+  padding:50%;
+  width: 100%;
+  background-color: black;
+  z-index: 9999;
+  display: block;
 }
 
 /******* Top Container*******/
@@ -92,11 +102,12 @@
   right:0;
   width:35%;
   margin-left:65%;
+  margin-bottom: 0%;
   padding-right: 5%;
-  font-size: 1em;
-  height:0%;
+  font-size: 1.5em;
   background-color: none;
   text-align:right;
+  overflow: visible;
 }
 
 
@@ -105,7 +116,7 @@ a:link, a:visited {
     border-radius: 1px;
     color: white; /*var(--clr_mbg);*/
     border: 0px solid black;
-    margin-right: 1%;
+    margin-right: 2%;
     padding: 1% 1%;
     width: 22px;
     height: 25px;
@@ -119,6 +130,8 @@ a:hover, a:active {
     color: white;
     transform: rotate(90deg);
     white-space:nowrap;
+    margin-top:2px;
+    margin-bottom:2px;
 }
 
 /******* Banner *******/

@@ -3,10 +3,11 @@
 
 <head>
   <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/pws_2.css" />
+  <link rel="stylesheet" type="text/css" href="css/pws.css" />
   <title> Eric Penner </title>
 </head>
 
+<div id="load_screen">a</div>
 <!-- <div style="width:100%;height:5vh;background-color:black"> -->
   <nav class="navbar2">
     <a onmouseover="this.innerHTML='About Me'" onmouseout="this.innerHTML='Ab'"
@@ -18,6 +19,11 @@
     <a onmouseover="this.innerHTML='Patents'" onmouseout="this.innerHTML='Pa'" href="#anch6"> Pa </a>
   </nav>
 
+<script>
+window.onload = function(){
+  document.getElementById("load_screen").style.display = "none"
+}
+</script>
 <!-- </div> -->
 </nav>
   <div class=cont0>
