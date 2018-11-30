@@ -10,13 +10,13 @@
 <div id="load_screen">a</div>
 <!-- <div style="width:100%;height:5vh;background-color:black"> -->
   <nav class="navbar2">
-    <a onmouseover="this.innerHTML='About Me'" onmouseout="this.innerHTML='Ab'"
+    <a class = "one" onmouseover="this.innerHTML='About Me'" onmouseout="this.innerHTML='Ab'"
     href="#anch1"> Ab </a>
-    <a onmouseover="this.innerHTML='Professional Exp'" onmouseout="this.innerHTML='Pr'" href="#anch2"> Pr </a>
-    <a onmouseover="this.innerHTML='Curriculm Vitae'" onmouseout="this.innerHTML='Cv'" href="#anch3"> Cv </a>
-    <a onmouseover="this.innerHTML='Research'" onmouseout="this.innerHTML='Re'" href="#anch4"> Re </a>
-    <a onmouseover="this.innerHTML='Teaching'" onmouseout="this.innerHTML='Te'" href="#anch5"> Te </a>
-    <a onmouseover="this.innerHTML='Patents'" onmouseout="this.innerHTML='Pa'" href="#anch6"> Pa </a>
+    <a class = "one" onmouseover="this.innerHTML='Professional Exp'" onmouseout="this.innerHTML='Pr'" href="#anch2"> Pr </a>
+    <a class = "one" onmouseover="this.innerHTML='Curriculm Vitae'" onmouseout="this.innerHTML='Cv'" href="#anch3"> Cv </a>
+    <a class = "one" onmouseover="this.innerHTML='Research'" onmouseout="this.innerHTML='Re'" href="#anch4"> Re </a>
+    <a class = "one" onmouseover="this.innerHTML='Teaching'" onmouseout="this.innerHTML='Te'" href="#anch5"> Te </a>
+    <a class = "one" onmouseover="this.innerHTML='Patents'" onmouseout="this.innerHTML='Pa'" href="#anch6"> Pa </a>
   </nav>
 
 <script>
@@ -135,13 +135,16 @@ window.onload = function(){
 Selection of Heterogenous Instruments in Fixed Effect Panel Model
           </div>
           <div class=indt_2>
- A multistage estimator dealing with endogeneity in a panel data context when the appropriate instruments for each cross section is an unknown subset of a large collection. Lasso is utilized to perform model selection.
-          </div>
+ A multistage estimator dealing with endogeneity in a panel data context when the appropriate instruments for each cross section is an unknown subset of a large collection. Lasso is utilized to perform model selection.<br>
+ <a class = "two" href = "https://github.com/Existentialdredd/hsi_pres"> Berkeley Econometrics Group 9/20 Presentation Materials</a>
+</div>
           <div class=indt_1>
 Oracle Efficiency and Stability in Additive Partially Linear Triangular Systems
          </div>
          <div class=indt_2>
-A multi stage estimator which deals with endogeneity in additive partially linear regression and examines the stability of the estimator relative to small changes in sample data.
+A multi stage estimator which deals with endogeneity in additive partially linear regression and examines the stability of the estimator relative to small changes in sample data.<br>
+<a class = "two" href = "linked/ep_2018_working_paper.pdf" download = "ep_2018_working_paper"> Working Paper </a>
+
          </div>
          <div class=indt_1>
 Representation and Judgement: Memory and Sequencing in Performance Evaluation
@@ -195,17 +198,10 @@ I simulate a network of suppliers and distributors over time where distributors 
     <div class=wl_1>
       <div class=wl_2 style="background-color:#61C491;color:black;box-shadow: 4px 4px">
         <div class=subtitle>
-          Developing Statistical Tools to Address the Unique Challenges of Big Data
+        Machine Learning Techniques to Exploit the Unique Opportunities Provided by “Big Data”
         </div>
         <div class=indt_1>
-          Model selection, overfitting, reproducibility, extremely wide data sets,
-          privacy, and computational speed are but a few of the concerns that
-          Economists, Social Scientists, Analysts, and Data Scientists must attend
-          to as they attempt to gain insights from the flood of information
-          generated daily. My research is focused on developing statistical tools
-          to help researchers confront these issues and choose the best techniques
-          to approach their research question so that their conclusions generalize
-          from sample to population.
+          Model selection, analyzing unstructured data, balancing exploitation and exploration in assign- ing treatments, and proxy variable generation are but a few of the issues that Economists, and Data Scientists once dreamed of having. Thanks to the rapid development of the field of ma- chine learning, tools now exist to accomplish tasks once dismissed as infeasible. My research here is focused on developing econometric tools to help researchers leverage machine learning techniques in order to construct causal inference and credible counterfactuals. My working pa- per “ Selection of Heterogenous Instruments in Fixed Effect Panel Model” is an estimator which incorporates both a lasso shrinkage estimator to provide a data driven means of selecting valid heterogenous instruments, and a sample splitting routine in manner suggested by Chernozhukov et al. (2017). The original inspiration for this estimator was to improve the estimation of log technological change in Augmented Solow-Hall type regressions like the one found in Basu et al. (2006).
         </div>
       </div>
       <div class=wr_2 style="background-color:#61C491;color:black;box-shadow: 0px 6px">
@@ -213,16 +209,8 @@ I simulate a network of suppliers and distributors over time where distributors 
           Developing Estimators That Account for Human Cognitive Processes
         </div>
         <div class=indt_1>
-          Human decision making is notoriously difficult to analyze.
-          We have inherent biases, we don't pay as much attention as we should,
-          our memories are neither fixed nor as good as was previously thought,
-          and we use heuristics far more than we would like to admit.
-          In order to accurately analyze the decisions that consumers, producers,
-          performers, and judges make one must depart from the simplifying
-          assumption of total rationality, and model decision making as it
-          actually happens.   I endeavor to incorporate the ever advancing
-          understanding of these processes from psychology and neuroscience into
-          robust estimation techniques.
+          Human decision making is notoriously difficult to analyze. We have inherent biases, we don’t pay as much attention as we should, our memories are neither fixed nor as good as was pre- viously thought, and we use heuristics far more than we would like to admit. In order to accurately analyze the decisions that consumers, producers, performers, and judges make one must depart from the simplifying assumption of total rationality, and model decision making as it more realistically happens. New theoretical frameworks for understanding these departures are numerous, but how can we estimate that parameters of a corresponding structural model when attributes like opinion, attention, and motivation are considered unobservable using with traditional methods. We can inform the estimation of these parameters with techniques like
+sentiment analysis, computer vision, and word embeddings. My research in this area is focused on utilizing machine learning tools to inform the estimation of structural models of departures to purely rational decision making.
         </div>
       </div>
       <div class=wl_2 style="background-color:#61C491;color:black;box-shadow: 4px 4px">
@@ -230,16 +218,8 @@ I simulate a network of suppliers and distributors over time where distributors 
           Capital Investment Under Uncertainty, Product Switching, and Congestion Constraints
         </div>
         <div class=indt_1>
-          How do companies determine the correct mixture of capital investment
-          types in order to prevent customer product switching in the face of
-          uncertain market conditions? For firms, there is always uncertainty
-          about what elements of their current business will ultimately cost
-          them customers  and how to invest capital to prevent this. For example
-          developers of an online multiplayer game may have to choose between
-          fixing a software bug and renting server space while accounting for
-          uncertain network congestion. Often, in order to incorporate the full
-          complexity of market conditions these questions must be answered
-          computationally.  I simulate the operation of such markets.
+
+How do companies determine the correct mixture of capital investment types in order to pre- vent customer product switching in the face of uncertain market conditions? For firms, there is always uncertainty about what elements of their current business will ultimately cost them customers and how to invest capital to prevent this. For example developers of an online multi- player game (PUBG) may have to choose between fixing a software bug and renting server space while accounting for uncertain network congestion and competitors in the market (Fortnite). Often, in order to incorporate the full complexity of market conditions these questions must be answered computationally. I simulate the operation of such markets in order to determine a decision rule for the best mixture of capital types for a given set of market conditions. These decision rules are of independent interest to academic economists but what value can a small firm derive from them given that they can observe only a small subset of the market conditions needed for an optimal solution. My research here is focused on methods for adaptively reducing the dimension of the decision rule space to account for the information available to market firms.
         </div>
       </div>
       <br>
@@ -274,7 +254,7 @@ of the mean to demonstrate the use of estimators and hypothesis tests. We then t
 regression, taking several weeks to build a strong understanding of this central topic. Our treatment stresses
 causal inference and includes a discussion of omitted variables. At the end, we describe some of the concerns
 that arise in the process of specifying linear models. Throughout the course, students will practice analyzing
-real-world data using the open-source language, R.
+real-world data using the open-source language, R. <br> <a class = "two" href='linked/unit_8_ls_inst.html'> Sample Lecture </a> ,<a class = "two" href='linked/last_first_unit_8_hw.html'> Sample Assignment </a>
         </div>
       </div>
       <div class=wl_2 style="background-color:#C8C8C8;color:black;box-shadow: 4px 4px">

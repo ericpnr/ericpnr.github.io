@@ -21,7 +21,7 @@
 * {box-sizing:border-box}
 
 .bdy { margin: 0;
-        min-width:700px;
+        min-width:800px;
         font-family: 'Fjalla One', sans-serif;
         background-color:black}
 
@@ -111,7 +111,7 @@
 }
 
 
-a:link, a:visited {
+a.one:link, a.one:visited {
     background-color: none /* var(--clr_1); */
     border-radius: 1px;
     color: white; /*var(--clr_mbg);*/
@@ -125,7 +125,7 @@ a:link, a:visited {
     display: inline-block;
 }
 
-a:hover, a:active {
+a.one:hover, a.one:active {
     background-color: none;
     color: white;
     transform: rotate(90deg);
@@ -133,6 +133,12 @@ a:hover, a:active {
     margin-top:2px;
     margin-bottom:2px;
 }
+
+a.two {
+    color: rgb(134, 24, 191);
+    font-size: 0.65em
+  }
+
 
 /******* Banner *******/
 
@@ -422,7 +428,7 @@ a:hover, a:active {
 .cont4 {
     position: relative;
     width: 100% ;
-    height: calc(1900px - 35vw);
+    height: calc(2550px - 15vw);
     background-color: var(--clr_mbg);
     min-width: 650px;
     background-image: url("../img/flatirons.jpg");
