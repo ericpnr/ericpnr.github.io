@@ -1,333 +1,377 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/pws.css" />
-  <title> Eric Penner </title>
+<title>Eric Penner</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Ultra" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 </head>
-
-<div id="load_screen">a</div>
-<!-- <div style="width:100%;height:5vh;background-color:black"> -->
-  <nav class="navbar2">
-    <a class = "one" onmouseover="this.innerHTML='About Me'" onmouseout="this.innerHTML='Ab'"
-    href="#anch1"> Ab </a>
-    <a class = "one" onmouseover="this.innerHTML='Professional Exp'" onmouseout="this.innerHTML='Pr'" href="#anch2"> Pr </a>
-    <a class = "one" onmouseover="this.innerHTML='Curriculm Vitae'" onmouseout="this.innerHTML='Cv'" href="#anch3"> Cv </a>
-    <a class = "one" onmouseover="this.innerHTML='Research'" onmouseout="this.innerHTML='Re'" href="#anch4"> Re </a>
-    <a class = "one" onmouseover="this.innerHTML='Teaching'" onmouseout="this.innerHTML='Te'" href="#anch5"> Te </a>
-    <a class = "one" onmouseover="this.innerHTML='Patents'" onmouseout="this.innerHTML='Pa'" href="#anch6"> Pa </a>
-  </nav>
-
+<div id = "ls" class="container-fluid" style ="position:absolute; z-index:100; margin-left: 0;margin-right: 0;height: 800vh;width: 100vw;background-color:red; background-position:center; background-size:cover; color:white; font-size:1.1em; font-family:'Josefin Sans', sans-serif; "> 
+<div class="row" style="display:-webkit-box ;display:-webkit-flex ;display:-ms-flexbox ;display:flex ;flex-wrap:wrap"> 
+<div id = "ls_cont" class="container-fluid" style ="display:block; position:absolute; z-index:10; top: 50vh;margin-left: 0;margin-right: 0;background-position:center; background-size:cover; color:white; font-size:10.0em; font-family:'Josefin Sans', sans-serif; "> 
+E.P.<br>
+</div>
 <script>
-window.onload = function(){
-  document.getElementById("load_screen").style.display = "none"
-}
+  var elem = document.getElementById("ls_cont");
+  var dw = elem.clientWidth;
+  var dh = elem.clientHeight;
+  var ww = window.innerWidth;
+  var wh = window.innerHeight;
+  elem.style.textAlign = "center";
+  elem.style.marginLeft = ww / 2 - dw / 2 + "px";
+  elem.style.top = wh / 2 - dh / 2 + "px";
+  window.onload = function() {
+  document.getElementById("ls").style.display = "none"}
 </script>
-<!-- </div> -->
-</nav>
-  <div class=cont0>
-    <div id="center"> Hi, I am Eric Penner </div>
-  </div>
-  <body class=bdy>
-
-  <div id="cont1">
-    <div class=banner>
-      About Me
-    </div>
-    <div id="anch1"></div>
-
-    <div id="c1_top_inner_cont" class=clearfix >
-      <div id="c1_txt">
-        <div>
-        Hi, I am Eric Penner and welcome to my page. As evidenced by the content of this page
-        I am and have been a number of things throughout my life but really I am
-        just a curious guy born and raised in Colorado. I spend most of my days
-        doing research in Economics and Econometrics and I spend my nights hanging
-        out with my wife and newborn daughter, reading, and writing a little code here and
-        there.
-        When I get the chance I enjoy hiking, mountain biking, and snowboarding.
-       </div>
-      </div>
-      <div style="float:right;width:30%;height:100%">
-        <img src="img/photo_1.jpg" style="height:100%;width:100%;object-fit:cover;">
-      </div>
-   </div>
-   <div id="c1_bot_inner_cont" class=clearfix>
-        <img src="img/landscape.jpg" class=c1_bot_img>
-   </div>
 </div>
-
-  <!-- Container 2-->
-
-  <div id="cont2">
-  <div class=banner>
-    Professional Experience
-  </div>
-  <div id="anch2"></div>
-    <div class=wr_1>
-      <div class=wr_2 style="background-color:#C894D8;color:black;box-shadow: 0px 6px">
-        <div class=subtitle>
-          RBN Energy, Consultant, Boulder, CO
-        </div>
-        <div class=indt_1>
-          Developing software to find optimal data presentation / clustering configurations using combinatorial optimization procedures such as random search and genetic algorithms, with potential for the future incorporation of a position auction. I have  written energy industry articles discussing the economics of shale oil production and decline curves in both domestic and international markets, natural gas storage and transportation, and the petrochemical industry. Additionally, I have prepared presentation materials, and assisted on consulting projects.
-        </div><br>
-      </div>
-      <div class=wr_2 style="margin-left:7.5%;width:92.5% ;background-color:#C894D8;color:black;box-shadow: 0px 6px">
-        <div class=subtitle>
-          Jacobs Engineering Group, Mechanical Engineer, Golden, CO
-        </div>
-        <div class=indt_1>
-          Completed design, procurement, and construction phases of several large capital projects in the oil, natural gas, food, and beverage industries. Effectively used my knowledge of the design and code requirements for pressure vessels, pumps, compressors, heat exchangers, fired heaters, distillation columns, dehydration units, pipelines, process piping, water treatment systems, and amine systems toward successful project completion. Lead mechanical engineer for multi-million dollar projects for BP America and MillerCoors LLC.  Successfully completed projects for Questar, Frontier Refining, BP, Exxon Mobil, MillerCoors, Integrys, and Enbridge Inc. Most recently held the position of Project Engineer on the Husky Diluent Metering Project.
-        </div><br>
-      </div>
-        <div class=wr_2 style="margin-left:12.5%;width:87.5%;background-color:#C894D8;color:black;box-shadow: 0px 6px">
-        <div class=subtitle>
-          US Army, Sergeant
-        </div>
-        <div class=indt_1>
-          Reconnaissance Specialist and Squad Leader spending significant time in dynamic and challenging environments such as South Korea and Bosnia Herzegovina. Seven months service NATO peacekeeping forces in Bosnia Herzegovina specializing in public relations.  Selected for promotion ahead of peers throughout decorated service record due to personal integrity, dedication to hard work, attention to detail, enforcement of safety, and peer mentorship.
-        </div><br>
-      </div>
-    </div>
-  </div>
-
-<!-- Container 3 -->
-
-  <div class=cont3>
-    <div class=banner>
-      Curriculum Vitae
-    </div>
-<!--    <div class=c3_r1>
-      <img src="img/snow_above.jpg" class="img3">
-    </div> -->
-    <div id="anch3"></div>
-      <div class=wl_1>
-        <div class=wl_2 style="width:65%;margin-right:5%;background-color:#BA7C3f;color:black;box-shadow: 4px 4px ">
-          <div class=subtitle>
-              Current Position
-          </div>
-          <div class=indt_1>
-            Postdoctoral Scholar, University of California, Berkeley
-          </div> <br>
-          <div class=subtitle>
-            Education
-          </div>
-          <div class=indt_1>
-            Ph.D., Economics, University of Colorado at Boulder
-          </div>
-          <div class=indt_2>
-            Field: Econometrics, Industrial Organization, Cognitive Economics <br>
-            Thesis: Essays in Semiparametric Structural Estimation <br>
-            Advisor: Professor Carlos Martins-Filho
-          </div>
-          <div class=indt_1>
-           M.A., Economics, University of Colorado at Boulder <br>
-           B.S., Mechanical Engineering, University of Wyoming <br>
-         </div>
-       </div>
-       <div class=wr_2 style="padding-right:10%;width:90%;margin-left:10%;background-color:#BA7C3f;color:black;box-shadow: 0px 6px">
-          <div class=subtitle>
-           Works in Progress
-          </div>
-          <div class=indt_1>
-Selection of Heterogenous Instruments in Fixed Effect Panel Model
-          </div>
-          <div class=indt_2>
- A multistage estimator dealing with endogeneity in a panel data context when the appropriate instruments for each cross section is an unknown subset of a large collection. Lasso is utilized to perform model selection.<br>
- <a class = "two" href = "https://github.com/Existentialdredd/hsi_pres"> Berkeley Econometrics Group 9/20 Presentation Materials</a>
 </div>
-          <div class=indt_1>
-Oracle Efficiency and Stability in Additive Partially Linear Triangular Systems
-         </div>
-         <div class=indt_2>
-A multi stage estimator which deals with endogeneity in additive partially linear regression and examines the stability of the estimator relative to small changes in sample data.<br>
-<a class = "two" href = "linked/ep_2018_working_paper.pdf" download = "ep_2018_working_paper"> Working Paper </a>
-
-         </div>
-         <div class=indt_1>
-Representation and Judgement: Memory and Sequencing in Performance Evaluation
-         </div>
-         <div class=indt_2>
-I develop and estimator which explicitly accounts for the role that memory and cognitive heuristics have on evaluative tasks. In particular, incorporate the "Evaluation by Moments" hypothesis which supposes that a judge assigns a judgment to a
-sequence of actions relative to a mental representation that the judge has constructed.
-         </div>
-         <div class=indt_1>
-Queuing and Capital Investment
-         </div>
-         <div class=indt_2>
-I simulate a network of suppliers and distributors over time where distributors must resupply periodically under stochastic inelastic demand conditions with terminals who also have to resupply under stochastic supply shortages. Distributors have  a choice of investing in either permanent capital (storage) or flexible capital (trucks for resupply).
-</div></div>
-      <div class=wl_2 style="width:80%;margin-right:20%;padding-left:25%;background-color:#BA7C3f;color:black;box-shadow: 4px 4px">
-      <div class=subtitle>
-         Fellowships, Honors, and Awards
-      </div>
-      <div class=indt_1>
-        Sieglinde Talbott Haller Endowed Economics Scholarship
-      </div>
-      <div class=indt_1>
-        Incoming Economics Ph.D. Departmental Fellowship
-      </div>
-      <div class=indt_1>
-         Tau Beta Pi Engineering Honor Society Member
-      </div>
-      <div class=indt_1>
-         Pipe Liners Club of Tulsa Scholarship Recipient
-      </div>
-      <div class=indt_1>
-         A. B. & Marian S. Nuss Memorial Scholarship Recipient
-      </div><br>
-      <div class=subtitle>
-        Professional Membership
-      </div>
-      <div class=indt_1>
-        Econometric Society, American Economic Association
-      </div>
-    </div>
-  </div>
+<body style="font-family: 'Josefin Sans', sans-serif; font-size:1.1em">
+<div style=" height:100vh; width:55px; position:fixed; background-color:black; z-index:1; overflow-x:hidden; "> 
+<a class=nav href="#abt" style=" display:block; padding-left: 10px;padding-top: 25px;padding-bottom: 25px;transform:rotate(180deg); writing-mode:vertical-rl; text-orientation:mixed; text-align:left; font-size:1.0em; color:white ">  Me Me Me<br>Me Me Me</a> 
+<a class=nav href="#cv" style=" display:block; padding-left: 10px;padding-top: 25px;padding-bottom: 25px;transform:rotate(180deg); writing-mode:vertical-rl; text-orientation:mixed; text-align:left; font-size:1.0em; color:white "> Curriculum <br> Vitae</a> 
+<a class=nav href="#wrk_exp" style=" display:block; padding-left: 10px;padding-top: 25px;padding-bottom: 25px;transform:rotate(180deg); writing-mode:vertical-rl; text-orientation:mixed; text-align:left; font-size:1.0em; color:white "> EXP <br> Grinding</a> 
+<a class=nav href="#r_int" style=" display:block; padding-left: 10px;padding-top: 25px;padding-bottom: 25px;transform:rotate(180deg); writing-mode:vertical-rl; text-orientation:mixed; text-align:left; font-size:1.0em; color:white "> Research<br>Interest</a> 
+<a class=nav href="#teach" style=" display:block; padding-left: 10px;padding-top: 25px;padding-bottom: 25px;transform:rotate(180deg); writing-mode:vertical-rl; text-orientation:mixed; text-align:left; font-size:1.0em; color:white ">   Teaching<br>Exper.</a> 
 </div>
+<script>
+  var tabs = document.getElementsByClassName("nav");
+  function mOver(obj) {
+    obj.style.backgroundColor = "white";
+    obj.style.color = "black";
+  }
+  function mOut(obj) {
+    obj.style.backgroundColor = "black";
+    obj.style.color = "white"
+  };
+  for (i = 0; i < tabs.length; i++) {
+    (function() {
+      var element = tabs[i];
+      element.style.textDecoration = "none";
+      element.addEventListener("mouseover", function() {
+        mOver(element);
+      });
+      element.addEventListener("mouseout", function() {
+        mOut(element);
+      });
+    }());
+  }
+</script>
+<div style="margin-left:55px; top:0">
+<div id = "abt" class="container-fluid" style ="z-index:10; top: 0;margin-left: 0;margin-right: 0;padding-left: 15px;padding-right: 15px;background-color:rgba(0, 50, 98, 0.95); background: url(https://drive.google.com/uc?id=12OQM-wdyb4cl9U2aKmTPiSwEeh-nR66A); background-position:center; background-size:cover; color:white; font-size:1.1em; font-family:'Josefin Sans', sans-serif; "> 
+<div class="row" style="display:-webkit-box ;display:-webkit-flex ;display:-ms-flexbox ;display:flex ;flex-wrap:wrap"> 
+<div id = "tst_1_cont" class="offset-md-1 col-md-5" style ="display:flex; flex-direction:column; margin-right: 10px;margin-top: 80px;padding-left: 50px;padding-right: 50px;padding-top: 20px;padding-bottom: 20px;background-color:red; background-position:center; background-size:cover; color:black; font-size:4.0em; font-family:'Ultra', serif; "> 
+Hi <br> I Am <br> Eric <br> Penner<br>
+</div>
+<div id = "tst_2_cont" class="col-md-5" style ="display:flex; flex-direction:column; min-height:50vh;margin-left: 10px;margin-right: 10px;margin-top: 80px;padding-left: 50px;padding-right: 50px;padding-top: 20px;background-color:green; background: url(https://drive.google.com/uc?id=1qSpmGLg18VEfS2uWa1wGIAuDHm50WAzE); background-position:center; background-size:cover; color:black; font-size:1.1em; "> 
+</div>
+</div>
+<div class="row" style="display:-webkit-box ;display:-webkit-flex ;display:-ms-flexbox ;display:flex ;flex-wrap:wrap"> 
+<div id = "tst_1_cont" class="offset-md-1 col-md-10" style ="margin-right: 10px;margin-top: 80px;margin-bottom: 80px;padding-left: 50px;padding-right: 50px;padding-top: 20px;padding-bottom: 20px;height: auto;background-color:red; background-position:center; background-size:cover; color:black; font-size:1.1em; font-family:'Josefin Sans', sans-serif; "> 
+ I am and have been a number
+             of things throughout my life but really I am just a curious guy born
+             and raised in Colorado. I spend most of my days doing research in
+             Economics and Econometrics and I spend my nights hanging out with my
+             wife and daughter, reading, and writing a little code here
+             and there. When I get the chance I enjoy hiking, mountain biking,
+             and snowboarding.<br>
+</div>
+</div>
+</div>
+<div id = "cv" style ="left: 0;top: 0;padding-left: 15px;padding-right: 15px;padding-bottom: 140px;height: auto;background-color:#7286D0; background: url(https://drive.google.com/uc?id=1QJo4rPoq1tq_Yia17v1B9dqr76dnKTSu); background-position:center; background-size:cover; color:black; font-size:1.1em; font-family:'Josefin Sans', sans-serif; "> 
+<div id = cv_banr class=row style ="background-color:rgba(0, 0, 0, 1); color:white; font-size:2.4em; position:sticky; height: auto;width: auto;padding-left: -15px;padding-right: -15px;"> 
+Curriculum Vitae
+</div> 
+<div class="row" style="display:-webkit-box ;display:-webkit-flex ;display:-ms-flexbox ;display:flex ;flex-wrap:wrap"> 
+<div id = "crps_educ_cont" class="offset-md-1 col-md-10" style ="margin-top: 80px;padding-left: 50px;padding-right: 50px;padding-top: 20px;height: auto;background-color:#E3DEDB; background-position:center; background-size:cover; color:black; font-size:1.1em; font-family:'Josefin Sans', sans-serif; "> 
 
+    <h4>Current Position</h4>
+    <p style="margin-left:10px"> Postdoctoral Scholar, University of California, Berkeley </p> <br>
 
-<!-- *Container 4*/ -->
-  <div class=cont4>
-    <div class=banner>
-      Research Interests
-    </div>
-  <div id="anch4"></div>
-    <div class=wl_1>
-      <div class=wl_2 style="background-color:#61C491;color:black;box-shadow: 4px 4px">
-        <div class=subtitle>
-        Machine Learning Techniques to Exploit the Unique Opportunities Provided by “Big Data”
-        </div>
-        <div class=indt_1>
-          Model selection, analyzing unstructured data, balancing exploitation and exploration in assign- ing treatments, and proxy variable generation are but a few of the issues that Economists, and Data Scientists once dreamed of having. Thanks to the rapid development of the field of ma- chine learning, tools now exist to accomplish tasks once dismissed as infeasible. My research here is focused on developing econometric tools to help researchers leverage machine learning techniques in order to construct causal inference and credible counterfactuals. My working pa- per “ Selection of Heterogenous Instruments in Fixed Effect Panel Model” is an estimator which incorporates both a lasso shrinkage estimator to provide a data driven means of selecting valid heterogenous instruments, and a sample splitting routine in manner suggested by Chernozhukov et al. (2017). The original inspiration for this estimator was to improve the estimation of log technological change in Augmented Solow-Hall type regressions like the one found in Basu et al. (2006).
-        </div>
-      </div>
-      <div class=wr_2 style="background-color:#61C491;color:black;box-shadow: 0px 6px">
-        <div class=subtitle>
-          Developing Estimators That Account for Human Cognitive Processes
-        </div>
-        <div class=indt_1>
-          Human decision making is notoriously difficult to analyze. We have inherent biases, we don’t pay as much attention as we should, our memories are neither fixed nor as good as was pre- viously thought, and we use heuristics far more than we would like to admit. In order to accurately analyze the decisions that consumers, producers, performers, and judges make one must depart from the simplifying assumption of total rationality, and model decision making as it more realistically happens. New theoretical frameworks for understanding these departures are numerous, but how can we estimate that parameters of a corresponding structural model when attributes like opinion, attention, and motivation are considered unobservable using with traditional methods. We can inform the estimation of these parameters with techniques like
-sentiment analysis, computer vision, and word embeddings. My research in this area is focused on utilizing machine learning tools to inform the estimation of structural models of departures to purely rational decision making.
-        </div>
-      </div>
-      <div class=wl_2 style="background-color:#61C491;color:black;box-shadow: 4px 4px">
-        <div class=subtitle>
-          Capital Investment Under Uncertainty, Product Switching, and Congestion Constraints
-        </div>
-        <div class=indt_1>
+          <h4> Education </h4>
+           <p style="margin-left:10px;margin-bottom:0px"> Ph.D., Economics, University of Colorado at Boulder</p>
+           <p style="margin-left:20px;margin-bottom:0px">Field: Econometrics, Industrial Organization, Cognitive Economics <br>
+           Thesis: Essays in Semiparametric Structural Estimation <br>
+           Advisor: Professor Carlos Martins-Filho<br></p>
+           <p style="margin-left:10px"> M.A., Economics, University of Colorado at Boulder <br>
+           B.S., Mechanical Engineering, University of Wyoming <br> </p><br>
+</div>
+</div>
+<div class="row" style="display:-webkit-box ;display:-webkit-flex ;display:-ms-flexbox ;display:flex ;flex-wrap:wrap"> 
+<div id = "wp_cont" class="offset-md-2 col-md-10" style ="margin-top: 140px;padding-left: 50px;padding-right: 50px;padding-top: 20px;height: auto;background-color:#E3DEDB; background-position:center; background-size:cover; color:black; font-size:1.1em; font-family:'Josefin Sans', sans-serif; "> 
+<div id = wp_cont_banr class=row style ="color:black; font-size:2.4em; position:sticky; height: auto;width: auto;padding-left: -15px;padding-right: -15px;padding-bottom: 20px;"> 
+Works In Progress
+</div> 
 
-How do companies determine the correct mixture of capital investment types in order to pre- vent customer product switching in the face of uncertain market conditions? For firms, there is always uncertainty about what elements of their current business will ultimately cost them customers and how to invest capital to prevent this. For example developers of an online multi- player game (PUBG) may have to choose between fixing a software bug and renting server space while accounting for uncertain network congestion and competitors in the market (Fortnite). Often, in order to incorporate the full complexity of market conditions these questions must be answered computationally. I simulate the operation of such markets in order to determine a decision rule for the best mixture of capital types for a given set of market conditions. These decision rules are of independent interest to academic economists but what value can a small firm derive from them given that they can observe only a small subset of the market conditions needed for an optimal solution. My research here is focused on methods for adaptively reducing the dimension of the decision rule space to account for the information available to market firms.
-        </div>
-      </div>
-      <br>
-    </div>
-  </div>
+            <h4> Selection of Heterogenous Instruments in Fixed Effect Panel Model </h4>
+            <p style="margin-left:10px"> A multistage estimator dealing with endogeneity in a
+           panel data context when the appropriate instruments for each cross
+           section is an unknown subset of a large collection. Lasso is utilized
+           to perform model selection.<br>
+            <a href = "https://drive.google.com/uc?id=1xheahwONv64sjPSf7L1MXZgLuR2bLFPi"
+            style= "background-color:black;color:white; padding: 10px 32px;text-align: center; display:inline-block; margin: 4px 2px">
+            Working Paper</a>
+            <a href = "https://drive.google.com/uc?id=1Pu5rb85uIat8ovCxi1PpWit3ViXujd6y"
+            style= "background-color:black;color:white; padding: 10px 32px;text-align: center; display:inline-block; margin: 4px 2px">
+            Monte Carlo Study</a>
+            <a href = "https://drive.google.com/uc?id=1jUkRPHCFBTbm7mLY1gjuhExA88nA-3ae"
+            style= "background-color:black;color:white; padding: 10px 32px;text-align: center; display:inline-block; margin: 4px 2px">
+            Presentation</a></p>
+            <br>
 
-<!-- Container 5 -->
+    <h4>Oracle Efficiency and Stability in Additive Partially Linear Triangular Systems </h4>
+    <p style="margin-left:10px"> A multi stage estimator which deals with endogeneity in
+    additive partially linear regression and examines the stability of the
+    estimator relative to small changes in sample data.<br>
+    <a href = "https://drive.google.com/uc?id=1smFNG9ss6iC51qN7w0yT-UBoa43D9BLg" download =
+    "ep_2019_working_paper" style= "background-color:black;color:white; padding: 10px 32px;text-align: center; display:inline-block; margin: 4px 2px"> Working Paper </a> <a href = "https://drive.google.com/uc?id=1OP4xoHFiGFQ3KvUvfaZY_YWjUZJkCSdN" download =
+    "ep_2019_working_paper_pres" style= "background-color:black;color:white; padding: 10px 32px;text-align: center; display:inline-block; margin: 4px 2px"> Presentation</a></p> <br>
 
+    <h4> Representation and Judgement: Memory and Sequencing in Performance Evaluation</h4>
+    <p style="margin-left:10px"> I develop and estimator which explicitly accounts for the
+    role that memory and cognitive heuristics have on evaluative tasks. In
+    particular, incorporate the "Evaluation by Moments" hypothesis which
+    supposes that a judge assigns a judgment to a sequence of actions relative
+    to a mental representation that the judge has constructed.<br>
+    <a href = "https://drive.google.com/uc?id=19UaxyEOx_buXQuAoFCwoIUKl0_3_43EI"
+    style= "background-color:black;color:white; padding: 10px 32px;text-align: center; display:inline-block; margin: 4px 2px">
+    Working Paper</a>
+    </p> <br>
 
-  <div class=cont5>
-    <div class=banner>
-      Teaching
-    </div>
-  <div id="anch5"></div>
-    <div class=wl_1>
-      <div class=wr_2 style="background-color:#C8C8C8;color:black;box-shadow: 0px 6px">
-        <div class=subtitle>
-          University of California, Berkeley, School of Information
-        </div>
-        <div class=indt_1>
-           W203 Statistics for Data Science, Masters of Information and Data Science Program (MIDS)
-        </div>
-        <div class=indt_2>
-          The goal of this course is to provide students with a foundational understanding of classical statistics and how
-it fits within the broader context of data science. Students will learn to apply the most common statistical
-procedures correctly, checking assumptions and responding appropriately when they appear violated. They
-will also learn to evaluate the design of a study and how the variables being measured relate to research
-questions.
-The course begins with a focus on exploratory analysis and descriptive statistics. From there, we learn
-how statistical models are built using the structure of probability theory. Next, we use the simple example
-of the mean to demonstrate the use of estimators and hypothesis tests. We then turn to classical linear
-regression, taking several weeks to build a strong understanding of this central topic. Our treatment stresses
-causal inference and includes a discussion of omitted variables. At the end, we describe some of the concerns
-that arise in the process of specifying linear models. Throughout the course, students will practice analyzing
-real-world data using the open-source language, R. <br> <a class = "two" href='linked/unit_8_ls_inst.html'> Sample Lecture </a> ,<a class = "two" href='linked/last_first_unit_8_hw.html'> Sample Assignment </a>
-        </div>
-      </div>
-      <div class=wl_2 style="background-color:#C8C8C8;color:black;box-shadow: 4px 4px">
-        <div class=subtitle>
-          University of Colorado at Boulder, Department of Economics
-        </div>
-        <div class=indt_1>
-          ECON 3818 Introduction to Statistics with Computer Applications
-        </div>
-          <div class=indt_2>
-            This is a one-semester course in statistics, and is required for Economics majors. This is
-a math class and we will study probability, random variables, probability distributions especially
-the normal distribution, and descriptive and inferential statistics including estimation and
-hypothesis testing. Emphasis is on both theory and application.
-          </div>
-        <div class=indt_1>
-         ECON 1078 Math Tools for Economists (I) <br>
-        </div>
-        <div class=indt_2>
-          The purpose of this course (and the following course) is to equip students with the necessary
-mathematical knowledge to be successful in the Economics courses given at the University of
-Colorado at Boulder.
-        </div>
-        </div>
-        <div class=wr_2 style="background-color:#C8C8C8;color:black;box-shadow: 0px 6px">
-        <div class=subtitle>
-          University of Colorado at South Denver, Department of Economics
-        </div>
-        <div class=indt_1>
-         ECON 2010 Principles of Microeconomics
-        </div>
-        <div class=indt_2>
-Economists study the process by which individuals and firms make decisions in a rational manner given their set
-of circumstances. Economists are concerned with the consequences for individuals, firms, and
-the economy of decisions made this way. Thus, in studying economics, reasoning skills are much
-more important than memorization skills. Having to think and reason (that is, make decisions)
-rather than just memorize makes economics a challenging subject for many students. On the
-other hand, studying economics also develops reasoning and analytical skills.
-        </div>
-      </div>
-    </div>
-  </div>
+    <h4> Queuing and Capital Investment</h4>
+    <p style="margin-left:10px"> I simulate a network of suppliers and distributors over time
+    where distributors must resupply periodically under stochastic inelastic
+    demand conditions with terminals who also have to resupply under stochastic
+    supply shortages. Distributors have  a choice of investing in either
+    permanent capital (storage) or flexible capital (trucks for resupply).<br>
+    <a style= "background-color:black;color:white; padding: 10px 32px;text-align: center; display:inline-block; margin: 4px 2px">
+    Coming Soon</a> </p><br>
+</div>
+</div>
+<div class="row" style="display:-webkit-box ;display:-webkit-flex ;display:-ms-flexbox ;display:flex ;flex-wrap:wrap"> 
+<div id = "patnt_cont" class="col-md-10" style ="margin-top: 80px;padding-left: 50px;padding-right: 50px;padding-top: 20px;height: auto;background-color:#E3DEDB; background-position:center; background-size:cover; color:black; font-size:1.1em; font-family:'Josefin Sans', sans-serif; "> 
+<div id = patnt_cont_banr class=row style ="background-color:#E3DEDB; color:black; font-size:2.4em; position:sticky; height: auto;width: auto;padding-left: -15px;padding-right: -15px;"> 
+Patent Pending
+</div> 
 
-<!-- Container 6 -->
+    <h4>Information Visualization Display Using Associative Clustered Tiling and Tesselation</h4>
+    <p style="padding-left:10px">
+    The amount and specificity of the information that each of us
+    have access to is unprecedented. Inquiries once requiring a lengthy trip to
+    the library or a long wait for the next edition of the local newspaper are
+    now resolved in seconds and from practically anywhere our curiosity is aroused.
+    Unfortunately, the typical manner in which collections of information are
+    electronically presented fails to provide us with a sense of the interconnection
+    between those pieces of information. Here we
+    develop a method by which information can be electronically presented users
+    that provides this sense of connection and interrelatedness allowing a viewer
+    to easily navigate their way to a fuller understanding of a topic.</p> <br>
+</div>
+</div>
+<div class="row" style="display:-webkit-box ;display:-webkit-flex ;display:-ms-flexbox ;display:flex ;flex-wrap:wrap"> 
+<div id = "pro_soft_cont" class="offset-md-2 col-md-10" style ="margin-top: 140px;padding-left: 50px;padding-right: 50px;padding-top: 20px;height: auto;background-color:#E3DEDB; background-position:center; background-size:cover; color:black; font-size:1.1em; font-family:'Josefin Sans', sans-serif; "> 
 
-  <div class=cont6>
-    <div class=banner>
-      Patents Pending
-    </div>
-  <div id="anch6"></div>
-    <div class=wr_1>
-      <div class=wr_2 style="background-color:#C46E4B;color:black;box-shadow: 0px 6px">
-        <div class=subtitle>
-          Information Visualization Display Using Associative Clustered Tiling and Tesselation
-        </div>
-        <div class=indt_1>
-          The amount and specifcity of the information that each of us have access to is unprecedented. Inquiries
-once requiring a lengthy trip to the library or a long wait for the next edition of the local newspaper
-are now resolved in seconds and from practically anywhere our curiosity is aroused. Unfortunately, the
-typical manner in which collections of information are electronically presented fails to provide us with
-a sense of the interconnection between those pieces of information. The suppression of this sense of
-interrelation is a hold over from the classical linearized presentation style mandated by the limitations of
-producing physical media and has been adopted almost wholesale by electronic media platforms. This
-sense of interconnectivity is vital as it provides us with a roadmap of how to explore a topic in search
-of greater understanding. Having a roadmap is especially helpful when we, as we so often do, use a few
-keywords to and an entry point into a topic and hope that the information we are truly interested in
-can be found from there. Here we develop a method by which information can be electronically
-presented users that provides this sense of connection and interrelatedness allowing a viewer to easily navigate
-their way to a fuller understanding of a topic.
-        </div>
-    </div>
+    <h4> Professional Membership </h4>
+    <p style="margin-left:10px">Econometric Society, American Economic Association </p> <br>
 
-  </div>
+    <h4> Software and Programming Language Prociency </h4>
+    <p style="margin-left:10px">
+    Software: Git, Jupyter Notebook/Lab/Hub, Rstudio, Matlab, STATA, Microsoft Office <br>
+    Language: python, R, matlab, HTML, CSS, Javascript<br>
+    Packages: Numpy, Pandas, Scikit-Learn, D3 </p> <br>
+</div>
+</div>
+</div>
+<div id = "wrk_exp" class="container-fluid" style ="top: 0;margin-left: 0;margin-right: 0;padding-left: 15px;padding-right: 15px;padding-bottom: 140px;height: auto;background-color:#E5DBB2; background: url(https://drive.google.com/uc?id=1wj13FJ9lg91KHAZiaYlIohmm_hhwqS1Q); background-position:center; background-repeat:repeat-x repeat-y; color:black; font-size:1.1em; font-family:'Josefin Sans', sans-serif; "> 
+<div id = wrk_exp_banr class=row style ="background-color:rgba(0, 0, 0, 1); color:white; font-size:2.4em; position:sticky; height: auto;padding-left: -15px;padding-right: -15px;"> 
+Professional Experience
+</div> 
+<div class="row" style="display:-webkit-box ;display:-webkit-flex ;display:-ms-flexbox ;display:flex ;flex-wrap:wrap"> 
+<div id = "rbn_cont" class="offset-md-1 col-md-9" style ="margin-top: 140px;padding-left: 50px;padding-right: 50px;padding-top: 20px;height: auto;background-color:rgb(44, 219, 146); background-position:center; background-size:cover; color:black; font-size:1.1em; font-family:'Josefin Sans', sans-serif; "> 
+
+          <h3>RBN Energy, Consultant </h3>
+          <p style="margin-left:10px"> Developing software to find optimal data presentation
+           / clustering configurations using combinatorial optimization
+           procedures such as random search and genetic algorithms, with
+           potential for the future incorporation of a position auction. I
+           have  written energy industry articles discussing the economics of
+           shale oil production and decline curves in both domestic and
+           international markets, natural gas storage and transportation, and
+           the petrochemical industry. Additionally, I have prepared
+           presentation materials, and assisted on consulting projectsself.<br>
+           <a href = "https://rbnenergy.com/user/7904"
+           style= "background-color:black;color:white; padding: 10px 32px;text-align:
+           center; display:inline-block; margin: 4px 2px">Blog Posts</a></p><br>
+</div>
+</div>
+<div class="row" style="display:-webkit-box ;display:-webkit-flex ;display:-ms-flexbox ;display:flex ;flex-wrap:wrap"> 
+<div id = "jacobs_cont" class="offset-md-3 col-md-9" style ="left: 0;top: 0;margin-top: 140px;margin-bottom: 0px;padding-left: 50px;padding-right: 50px;padding-top: 20px;height: auto;background-color:rgba(205, 73, 217, 1); background-position:center; background-size:cover; color:black; font-size:1.1em; font-family:'Josefin Sans', sans-serif; "> 
+
+            <h3> Jacobs Engineering Group, Mechanical Engineer </h3>
+            <p style="margin-left:10px"> Completed design, procurement, and construction phases
+            of several large capital projects in the oil, natural gas, food, and
+            beverage industries. Effectively used my knowledge of the design and
+            code requirements for pressure vessels, pumps, compressors, heat
+            exchangers, fired heaters, distillation columns, dehydration units,
+            pipelines, process piping, water treatment systems, and amine
+            systems toward successful project completion. Lead mechanical
+            engineer for multi-million dollar projects for BP America and
+            MillerCoors LLC.  Successfully completed projects for Questar,
+            Frontier Refining, BP, Exxon Mobil, MillerCoors, Integrys, and
+            Enbridge Inc. Most recently held the position of Project Engineer
+            on the Husky Diluent Metering Project.</p> <br>
+</div>
+</div>
+<div class="row" style="display:-webkit-box ;display:-webkit-flex ;display:-ms-flexbox ;display:flex ;flex-wrap:wrap"> 
+<div id = "army_cont" class="offset-md-2 col-md-9" style ="top: 0;margin-top: 140px;padding-left: 50px;padding-right: 50px;padding-top: 20px;height: auto;background-color:rgb(68, 126, 238); background-position:center; background-size:cover; color:black; font-size:1.1em; font-family:'Josefin Sans', sans-serif; "> 
+
+        <h4>US Army, Sergeant</h4>
+        <p style="margin-left:10px"> Reconnaissance Specialist and Squad Leader spending
+           significant time in dynamic and challenging environments such as
+           South Korea and Bosnia Herzegovina. Seven months service NATO
+           peacekeeping forces in Bosnia Herzegovina specializing in public
+           relations.  Selected for promotion ahead of peers throughout
+           decorated service record due to personal integrity, dedication to
+           hard work, attention to detail, enforcement of safety, and peer
+           mentorship. </p> <br>
+</div>
+</div>
+</div>
+<div id = "r_int" class="container-fluid" style ="top: 0;margin-left: 0;margin-right: 0;padding-left: 15px;padding-right: 15px;padding-bottom: 80px;height: auto;background-color:#ACC756; background: url(https://drive.google.com/uc?id=157QlnPdsMTOKokekoD8sUpn_-tzhb4gX); background-position:center; background-size:cover; color:black; font-size:1.1em; font-family:'Josefin Sans', sans-serif; "> 
+<div id = r_int_banr class=row style ="background-color:rgba(0, 0, 0, 1); color:white; font-size:2.4em; position:sticky; height: auto;padding-left: -15px;padding-right: -15px;"> 
+Research Interests
+</div> 
+<div class="row" style="display:-webkit-box ;display:-webkit-flex ;display:-ms-flexbox ;display:flex ;flex-wrap:wrap"> 
+<div id = "ml_bs_cont" class="col-md-10" style ="margin-top: 140px;padding-left: 50px;padding-right: 50px;padding-top: 20px;height: auto;background-color:#E3DEDB; background-position:center; background-size:cover; color:black; font-size:1.1em; font-family:'Josefin Sans', sans-serif; "> 
+
+    <h4> Machine Learning to Exploit the Unique Opportunities Provided by Big Data </h4>
+    <p style="margin-left:10px"> Model selection, analyzing unstructured data, balancing
+    exploitation and exploration in assign- ing treatments, and proxy variable
+    generation are but a few of the issues that Economists, and Data Scientists
+    once dreamed of having. Thanks to the rapid development of the field of
+    machine learning, tools now exist to accomplish tasks once dismissed as
+    infeasible. My research here is focused on developing econometric tools to
+    help researchers leverage machine learning techniques in order to construct
+    causal inference and credible counterfactuals. My working paper Selection
+    of Heterogenous Instruments in Fixed Effect Panel Model is an estimator
+    which incorporates both a lasso shrinkage estimator to provide a data driven
+    means of selecting valid heterogenous instruments, and a sample splitting
+    routine in manner suggested by Chernozhukov et al. (2017). The original
+    inspiration for this estimator was to improve the estimation of log
+    technological change in Augmented Solow-Hall type regressions like the one
+    found in Basu et al. (2006).</p> <br>
+</div>
+</div>
+<div class="row" style="display:-webkit-box ;display:-webkit-flex ;display:-ms-flexbox ;display:flex ;flex-wrap:wrap"> 
+<div id = "cog_bs_cont" class="offset-md-2 col-md-10" style ="left: 0;top: 0;margin-top: 140px;padding-left: 50px;padding-right: 50px;padding-top: 20px;height: auto;background-color:#E3DEDB; background-position:center; background-size:cover; color:black; font-size:1.1em; font-family:'Josefin Sans', sans-serif; "> 
+
+    <h4>Developing Estimators That Account for Human Cognitive Processes </h4>
+    <p style="margin-left:10px"> Human decision making is notoriously difficult to analyze.
+    We have inherent biases, we dont pay as much attention as we should, our
+    memories are neither fixed nor as good as was previously thought, and we
+    use heuristics far more than we would like to admit. In order to accurately
+    analyze the decisions that consumers, producers, performers, and judges make
+    one must depart from the simplifying assumption of total rationality, and
+    model decision making as it more realistically happens. New theoretical
+    frameworks for understanding these departures are numerous, but how can we
+    estimate that parameters of a corresponding structural model when attributes
+    like opinion, attention, and motivation are considered unobservable using
+    with traditional methods. We can inform the estimation of these parameters
+    with techniques like sentiment analysis, computer vision, and word embeddings.
+    My research in this area is focused on utilizing machine learning tools to
+    inform the estimation of structural models of departures to purely rational
+    decision making.</p> <br>
+</div>
+</div>
+<div class="row" style="display:-webkit-box ;display:-webkit-flex ;display:-ms-flexbox ;display:flex ;flex-wrap:wrap"> 
+<div id = "cap_bs_cont" class="col-md-10" style ="left: 0;top: 0;margin-top: 140px;padding-left: 50px;padding-right: 50px;padding-top: 20px;height: auto;background-color:#E3DEDB; background-position:center; background-size:cover; color:black; font-size:1.1em; font-family:'Josefin Sans', sans-serif; "> 
+
+    <h4>Capital Investment Under Uncertainty, Product Switching, and Congestion Constraints </h4>
+    <p style="margin-left:10px">
+    How do companies determine the correct mixture of capital
+    investment types in order to prevent customer product switching in the
+    face of uncertain market conditions? For firms, there is always uncertainty
+    about what elements of their current business will ultimately cost them
+    customers and how to invest capital to prevent this. For example developers
+    of an online multi- player game (PUBG) may have to choose between fixing a
+    software bug and renting server space while accounting for uncertain network
+    congestion and competitors in the market (Fortnite). Often, in order to
+    incorporate the full complexity of market conditions these questions must
+    be answered computationally. I simulate the operation of such markets in
+    order to determine a decision rule for the best mixture of capital types
+    for a given set of market conditions. These decision rules are of independent
+    interest to academic economists but what value can a small firm derive from
+    them given that they can observe only a small subset of the market conditions
+    needed for an optimal solution. My research here is focused on methods for
+    adaptively reducing the dimension of the decision rule space to account for
+    the information available to market firms.</p> <br>
+</div>
+</div>
+</div>
+<div id = "teach" class="container-fluid" style ="top: 0;margin-left: 0;margin-right: 0;padding-left: 15px;padding-right: 15px;padding-bottom: 80px;height: auto;background-color:#F1D5DC; background: url(https://drive.google.com/uc?id=1DlvKPBVwL1ip-BX-L1YKN4fFi98rf5El); background-position:center; background-repeat:repeat-x repeat-y; color:black; font-size:1.1em; font-family:'Josefin Sans', sans-serif; "> 
+<div id = teach_banr class=row style ="background-color:rgba(0, 0, 0, 1); color:white; font-size:2.4em; position:sticky; height: auto;padding-left: -15px;padding-right: -15px;"> 
+Teaching
+</div> 
+<div class="row" style="display:-webkit-box ;display:-webkit-flex ;display:-ms-flexbox ;display:flex ;flex-wrap:wrap"> 
+<div id = "berkeley_cont" class="offset-md-1 col-md-10" style ="margin-top: 140px;padding-left: 50px;padding-right: 50px;padding-top: 20px;height: auto;background-color:violet; background-position:center; background-size:cover; color:black; font-size:1.1em; font-family:'Josefin Sans', sans-serif; "> 
+
+    <h3> University of California, Berkeley</h3>
+    <h4> W203 Statistics for Data Science </h4>
+    <p style="margin-left:10px"> The goal of this course is to provide students with a
+    foundational understanding of classical statistics and how it fits within
+    the broader context of data science. Students will learn to apply the most
+    common statistical procedures correctly, checking assumptions and responding
+    appropriately when they appear violated. They will also learn to evaluate
+    the design of a study and how the variables being measured relate to research
+    questions. The course begins with a focus on exploratory analysis and
+    descriptive statistics. From there, we learn how statistical models are
+    built using the structure of probability theory. Next, we use the simple
+    example of the mean to demonstrate the use of estimators and hypothesis
+    tests. We then turn to classical linear regression, taking several weeks to
+    build a strong understanding of this central topic. Our treatment stresses
+    causal inference and includes a discussion of omitted variables. At the end,
+    we describe some of the concerns that arise in the process of specifying
+    linear models. Throughout the course, students will practice analyzing
+    real-world data using the open-source language, R. <br>
+    <a href='https://drive.google.com/uc?id=1YquSH4IpRDIK9zPvED5JOkeQcB2c-hX9' style= "background-color:black;color:white; padding: 10px 32px;text-align: center; display:inline-block; margin: 4px 2px" > Sample Lecture </a>
+    <a href='https://drive.google.com/uc?id=1cx4jGQbxNvdB9KgqAIB10-FjwMtedQwy' style= "background-color:black;color:white; padding: 10px 32px;text-align: center; display:inline-block; margin: 4px 2px" > Sample Assignment </a> ,
+    </p><br>
+</div>
+</div>
+<div class="row" style="display:-webkit-box ;display:-webkit-flex ;display:-ms-flexbox ;display:flex ;flex-wrap:wrap"> 
+<div id = "boulder_cont" class="offset-md-2 col-md-10" style ="margin-top: 140px;padding-left: 50px;padding-right: 50px;padding-top: 20px;height: auto;background-color:rgb(101, 205, 90); background-position:center; background-size:cover; color:black; font-size:1.1em; font-family:'Josefin Sans', sans-serif; "> 
+
+    <h3> University of Colorado, Boulder</h3>
+    <h4> ECON 3818 Introduction to Statistics with Computer Applications </h4>
+    <p style="margin-left:10px">This is a one-semester course in statistics, and is required
+    for Economics majors. This is a math class and we will study probability,
+    random variables, probability distributions especially the normal distribution,
+    and descriptive and inferential statistics including estimation and hypothesis
+    testing. Emphasis is on both theory and application.</p><br>
+    <h4> ECON 1078 Math Tools for Economists (I) </h4>
+    <p style="margin-left:10px"> The purpose of this course (and the following course) is to
+    equip students with the necessary mathematical knowledge to be successful
+    in the Economics courses given at the University of Colorado at Boulder  </p> <br>
+</div>
+</div>
+<div class="row" style="display:-webkit-box ;display:-webkit-flex ;display:-ms-flexbox ;display:flex ;flex-wrap:wrap"> 
+<div id = "s_denver_cont" class="col-md-10" style ="margin-top: 140px;padding-left: 50px;padding-right: 50px;padding-top: 20px;height: auto;background-color:rgb(240, 119, 86); background-position:center; background-size:cover; color:black; font-size:1.1em; font-family:'Josefin Sans', sans-serif; "> 
+
+    <h3> University of Colorado, South Denver </h3>
+    <h4> ECON 2010 Principles of Microeconomics </h4>
+    <p style="margin-left:10px">Economists study the process by which individuals and firms
+    make decisions in a rational manner given their set of circumstances.
+    Economists are concerned with the consequences for individuals, firms, and
+    the economy of decisions made this way. Thus, in studying economics,
+    reasoning skills are much more important than memorization skills. Having
+    to think and reason (that is, make decisions) rather than just memorize
+    makes economics a challenging subject for many students. On the other hand,
+    studying economics also develops reasoning and analytical skills.</p> <br>
+</div>
+</div>
+</div>
 </div>
 </body>
-</html>
