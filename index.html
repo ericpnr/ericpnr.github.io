@@ -10,7 +10,23 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 </head>
-<div id = "ls" class="container-fluid" style ="position:absolute; z-index:100; margin-left: 0;margin-right: 0;height: 800vh;width: 100vw;background-color:red; background-position:center; background-size:cover; color:white; font-size:1.1em; font-family:'Josefin Sans', sans-serif; "> 
+<script>
+function for_mobile() {
+  var w = window.innerWidth ||
+  document.documentElement.clientWidth ||
+  document.body.clientWidth;
+  if (w <= 600) {
+    document.body.style.fontSize = "0.8em"
+    document.getElementById("side_bar").style.width = "35px";
+    document.getElementById("main").style.marginLeft = "35px"
+  } else {
+    document.body.style.fontSize = "1.1em"
+    document.getElementById("side_bar").style.width = "55px";
+    document.getElementById("main").style.marginLeft = "55px"
+  }
+}
+</script>
+<div id = "ls" class="container-fluid" style ="position:absolute; z-index:100; margin-left: 0;margin-right: 0;height: 900vh;width: 100vw;background-color:red; background-position:center; background-size:cover; color:white; font-size:1.1em; font-family:'Josefin Sans', sans-serif; "> 
 <div class="row" style="display:-webkit-box ;display:-webkit-flex ;display:-ms-flexbox ;display:flex ;flex-wrap:wrap"> 
 <div id = "ls_cont" class="container-fluid" style ="display:block; position:absolute; z-index:10; top: 50vh;margin-left: 0;margin-right: 0;background-position:center; background-size:cover; color:white; font-size:10.0em; font-family:'Josefin Sans', sans-serif; "> 
 E.P.<br>
@@ -25,17 +41,19 @@ E.P.<br>
   elem.style.marginLeft = ww / 2 - dw / 2 + "px";
   elem.style.top = wh / 2 - dh / 2 + "px";
   window.onload = function() {
+  for_mobile();
   document.getElementById("ls").style.display = "none"}
 </script>
 </div>
 </div>
-<body style="font-family: 'Josefin Sans', sans-serif; font-size:1.1em">
-<div style=" height:100vh; width:55px; position:fixed; background-color:black; z-index:1; overflow-x:hidden; "> 
+<body  onresize="for_mobile()" style="font-family: 'Josefin Sans', sans-serif; font-size:1.1em">
+<div id="side_bar"  style=" height:100vh; width:55px; position:fixed; background-color:black; z-index:1; overflow-x:hidden; "> 
 <a class=nav href="#abt" style=" display:block; padding-left: 10px;padding-top: 25px;padding-bottom: 25px;transform:rotate(180deg); writing-mode:vertical-rl; text-orientation:mixed; text-align:left; font-size:1.0em; color:white ">  Me Me Me<br>Me Me Me</a> 
 <a class=nav href="#cv" style=" display:block; padding-left: 10px;padding-top: 25px;padding-bottom: 25px;transform:rotate(180deg); writing-mode:vertical-rl; text-orientation:mixed; text-align:left; font-size:1.0em; color:white "> Curriculum <br> Vitae</a> 
 <a class=nav href="#wrk_exp" style=" display:block; padding-left: 10px;padding-top: 25px;padding-bottom: 25px;transform:rotate(180deg); writing-mode:vertical-rl; text-orientation:mixed; text-align:left; font-size:1.0em; color:white "> EXP <br> Grinding</a> 
 <a class=nav href="#r_int" style=" display:block; padding-left: 10px;padding-top: 25px;padding-bottom: 25px;transform:rotate(180deg); writing-mode:vertical-rl; text-orientation:mixed; text-align:left; font-size:1.0em; color:white "> Research<br>Interest</a> 
-<a class=nav href="#teach" style=" display:block; padding-left: 10px;padding-top: 25px;padding-bottom: 25px;transform:rotate(180deg); writing-mode:vertical-rl; text-orientation:mixed; text-align:left; font-size:1.0em; color:white ">   Teaching<br>Exper.</a> 
+<a class=nav href="#teach" style=" display:block; padding-left: 10px;padding-top: 25px;padding-bottom: 25px;transform:rotate(180deg); writing-mode:vertical-rl; text-orientation:mixed; text-align:left; font-size:1.0em; color:white ">  Teaching<br>Exper.</a> 
+<a class=nav href="#contact" style=" display:block; padding-left: 10px;padding-top: 25px;padding-bottom: 25px;transform:rotate(180deg); writing-mode:vertical-rl; text-orientation:mixed; text-align:left; font-size:1.0em; color:white "> Contact<br>Me</a> 
 </div>
 <script>
   var tabs = document.getElementsByClassName("nav");
@@ -60,7 +78,7 @@ E.P.<br>
     }());
   }
 </script>
-<div style="margin-left:55px; top:0">
+<div id="main" style="margin-left:55px; top:0">
 <div id = "abt" class="container-fluid" style ="z-index:10; top: 0;margin-left: 0;margin-right: 0;padding-left: 15px;padding-right: 15px;background-color:rgba(0, 50, 98, 0.95); background: url(https://drive.google.com/uc?id=12OQM-wdyb4cl9U2aKmTPiSwEeh-nR66A); background-position:center; background-size:cover; color:white; font-size:1.1em; font-family:'Josefin Sans', sans-serif; "> 
 <div class="row" style="display:-webkit-box ;display:-webkit-flex ;display:-ms-flexbox ;display:flex ;flex-wrap:wrap"> 
 <div id = "tst_1_cont" class="offset-md-1 col-md-5" style ="display:flex; flex-direction:column; margin-right: 10px;margin-top: 80px;padding-left: 50px;padding-right: 50px;padding-top: 20px;padding-bottom: 20px;background-color:red; background-position:center; background-size:cover; color:black; font-size:4.0em; font-family:'Ultra', serif; "> 
@@ -192,7 +210,14 @@ Professional Experience
 <div class="row" style="display:-webkit-box ;display:-webkit-flex ;display:-ms-flexbox ;display:flex ;flex-wrap:wrap"> 
 <div id = "rbn_cont" class="offset-md-1 col-md-9" style ="margin-top: 140px;padding-left: 50px;padding-right: 50px;padding-top: 20px;height: auto;background-color:rgb(44, 219, 146); background-position:center; background-size:cover; color:black; font-size:1.1em; font-family:'Josefin Sans', sans-serif; "> 
 
+        <p>
           <h3>RBN Energy, Consultant </h3>
+          <ul>
+          <li> Algorithm Development </li>
+          <li> Patent Writing </li>
+          <li> Energy Industry Analysis </li>
+          </ul>
+         </p>
           <p style="margin-left:10px"> Developing software to find optimal data presentation
            / clustering configurations using combinatorial optimization
            procedures such as random search and genetic algorithms, with
@@ -210,7 +235,14 @@ Professional Experience
 <div class="row" style="display:-webkit-box ;display:-webkit-flex ;display:-ms-flexbox ;display:flex ;flex-wrap:wrap"> 
 <div id = "jacobs_cont" class="offset-md-3 col-md-9" style ="left: 0;top: 0;margin-top: 140px;margin-bottom: 0px;padding-left: 50px;padding-right: 50px;padding-top: 20px;height: auto;background-color:rgba(205, 73, 217, 1); background-position:center; background-size:cover; color:black; font-size:1.1em; font-family:'Josefin Sans', sans-serif; "> 
 
-            <h3> Jacobs Engineering Group, Mechanical Engineer </h3>
+            <p>
+              <h3> Jacobs Engineering Group, Mechanical Engineer </h3>
+              <ul>
+              <li> Lead Mechanical and Project Engineer </li>
+              <li> Energy Industry </li>
+              <li> Food and Beverage Industry </li>
+              </ul>
+             </p>
             <p style="margin-left:10px"> Completed design, procurement, and construction phases
             of several large capital projects in the oil, natural gas, food, and
             beverage industries. Effectively used my knowledge of the design and
@@ -228,11 +260,18 @@ Professional Experience
 <div class="row" style="display:-webkit-box ;display:-webkit-flex ;display:-ms-flexbox ;display:flex ;flex-wrap:wrap"> 
 <div id = "army_cont" class="offset-md-2 col-md-9" style ="top: 0;margin-top: 140px;padding-left: 50px;padding-right: 50px;padding-top: 20px;height: auto;background-color:rgb(68, 126, 238); background-position:center; background-size:cover; color:black; font-size:1.1em; font-family:'Josefin Sans', sans-serif; "> 
 
-        <h4>US Army, Sergeant</h4>
+        <p>
+        <h3>US Army, Sergeant</h3>
+          <ul>
+          <li> Squad Leader </li>
+          <li> NATO Peacekeeper in Bosnia and Herzegovina  </li>
+          <li> Post 9/11 Veteran</li>
+          </ul>
+         </p>
         <p style="margin-left:10px"> Reconnaissance Specialist and Squad Leader spending
            significant time in dynamic and challenging environments such as
-           South Korea and Bosnia Herzegovina. Seven months service NATO
-           peacekeeping forces in Bosnia Herzegovina specializing in public
+           South Korea and Bosnia and Herzegovina. Seven months service NATO
+           peacekeeping forces in Bosnia and Herzegovina specializing in public
            relations.  Selected for promotion ahead of peers throughout
            decorated service record due to personal integrity, dedication to
            hard work, attention to detail, enforcement of safety, and peer
@@ -247,7 +286,14 @@ Research Interests
 <div class="row" style="display:-webkit-box ;display:-webkit-flex ;display:-ms-flexbox ;display:flex ;flex-wrap:wrap"> 
 <div id = "ml_bs_cont" class="col-md-10" style ="margin-top: 140px;padding-left: 50px;padding-right: 50px;padding-top: 20px;height: auto;background-color:#E3DEDB; background-position:center; background-size:cover; color:black; font-size:1.1em; font-family:'Josefin Sans', sans-serif; "> 
 
+    <p>
     <h4> Machine Learning to Exploit the Unique Opportunities Provided by Big Data </h4>
+    <ul>
+        <li>Econometrics
+        <li>High Dimensional Data
+        <li>Unobserved Heterogeneity
+    </ul>
+    </p>
     <p style="margin-left:10px"> Model selection, analyzing unstructured data, balancing
     exploitation and exploration in assign- ing treatments, and proxy variable
     generation are but a few of the issues that Economists, and Data Scientists
@@ -268,7 +314,14 @@ Research Interests
 <div class="row" style="display:-webkit-box ;display:-webkit-flex ;display:-ms-flexbox ;display:flex ;flex-wrap:wrap"> 
 <div id = "cog_bs_cont" class="offset-md-2 col-md-10" style ="left: 0;top: 0;margin-top: 140px;padding-left: 50px;padding-right: 50px;padding-top: 20px;height: auto;background-color:#E3DEDB; background-position:center; background-size:cover; color:black; font-size:1.1em; font-family:'Josefin Sans', sans-serif; "> 
 
+    <p>
     <h4>Developing Estimators That Account for Human Cognitive Processes </h4>
+    <ul>
+        <li> Cognitive Economics </li>
+        <li> Memory and Judgement </li>
+        <li> Econometrics </li>
+    </ul>
+    </p>
     <p style="margin-left:10px"> Human decision making is notoriously difficult to analyze.
     We have inherent biases, we dont pay as much attention as we should, our
     memories are neither fixed nor as good as was previously thought, and we
@@ -289,7 +342,14 @@ Research Interests
 <div class="row" style="display:-webkit-box ;display:-webkit-flex ;display:-ms-flexbox ;display:flex ;flex-wrap:wrap"> 
 <div id = "cap_bs_cont" class="col-md-10" style ="left: 0;top: 0;margin-top: 140px;padding-left: 50px;padding-right: 50px;padding-top: 20px;height: auto;background-color:#E3DEDB; background-position:center; background-size:cover; color:black; font-size:1.1em; font-family:'Josefin Sans', sans-serif; "> 
 
+    <p>
     <h4>Capital Investment Under Uncertainty, Product Switching, and Congestion Constraints </h4>
+    <ul>
+        <li> Computational Economics
+        <li> Industrial Organization
+        <li> Rare and Extremely Costly Events
+    </ul>
+    </p>
     <p style="margin-left:10px">
     How do companies determine the correct mixture of capital
     investment types in order to prevent customer product switching in the
@@ -370,6 +430,21 @@ Teaching
     to think and reason (that is, make decisions) rather than just memorize
     makes economics a challenging subject for many students. On the other hand,
     studying economics also develops reasoning and analytical skills.</p> <br>
+</div>
+</div>
+</div>
+<div id = "contact" class="container-fluid" style ="top: 0;margin-left: 0;margin-right: 0;padding-left: 15px;padding-right: 15px;padding-bottom: 80px;height: auto;background-color:black; background-position:center; background-size:cover; color:black; font-size:1.1em; font-family:'Josefin Sans', sans-serif; "> 
+<div id = contact_banr class=row style ="background-color:rgba(0, 0, 0, 1); color:white; font-size:2.4em; position:sticky; height: auto;padding-left: -15px;padding-right: -15px;"> 
+Contact Info
+</div> 
+<div class="row" style="display:-webkit-box ;display:-webkit-flex ;display:-ms-flexbox ;display:flex ;flex-wrap:wrap"> 
+<div id = "contact_cont" class="col-md-4" style ="margin-top: 80px;padding-left: 50px;padding-right: 50px;padding-top: 35px;height: auto;background-color:#4AC3C2; background-position:center; background-size:cover; color:black; font-size:1.1em; font-family:'Josefin Sans', sans-serif; "> 
+<div id = contact_cont_banr class=row style ="background-color:#E3DEDB; color:black; font-size:2.4em; position:sticky; height: auto;width: auto;padding-left: -15px;padding-right: -15px;"> 
+</div> 
+
+    <h5>Email: <a href = "mailto:ericpnr@gmail.com?Subject=Introduction" target='_top'> ericpnr@gmail.com <a></h5>
+    <h5>LinkedIn Profile: <a href="https://www.linkedin.com/in/epenner1/"> epenner1  </a> <h5>
+     <br>
 </div>
 </div>
 </div>
