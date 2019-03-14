@@ -81,6 +81,48 @@ E.P.<br>
       });
     }());
   }
+  function scroll_hl() {
+    var tabs = document.getElementsByClassName("nav");
+    var outer = document.getElementById("main");
+    var d1 = document.getElementById("abt");
+    var d2 = document.getElementById("cv");
+    var d3 = document.getElementById("wrk_exp");
+    var d4 = document.getElementById("r_int");
+    var d5 = document.getElementById("teach");
+    var d6 = document.getElementById("contact");
+    var margin = 200;
+    var d1_abv = window.pageYOffset - d1.offsetTop+margin;
+    var d2_abv = window.pageYOffset - d2.offsetTop+margin;
+    var d3_abv = window.pageYOffset - d3.offsetTop+margin;
+    var d4_abv = window.pageYOffset - d4.offsetTop+margin;
+    var d5_abv = window.pageYOffset - d5.offsetTop+margin;
+    var d6_abv = window.pageYOffset - d6.offsetTop+margin;
+    if (d2_abv < 0){tabs[0].style.backgroundColor = "white";
+                      tabs[0].style.color = "black" }
+    else {tabs[0].style.backgroundColor = "black";
+          tabs[0].style.color = "white" };
+    if (d2_abv > 0 && d3_abv < 0){
+          tabs[1].style.backgroundColor = "white";
+          tabs[1].style.color = "black" }
+    else {tabs[1].style.backgroundColor = "black";
+          tabs[1].style.color = "white" };
+    if (d3_abv > 0 && d4_abv < 0){
+          tabs[2].style.backgroundColor = "white";
+          tabs[2].style.color = "black" }
+    else {tabs[2].style.backgroundColor = "black";
+          tabs[2].style.color = "white" };
+    if (d4_abv > 0 && d5_abv < 0){
+          tabs[3].style.backgroundColor = "white";
+          tabs[3].style.color = "black" }
+    else {tabs[3].style.backgroundColor = "black";
+          tabs[3].style.color = "white" };
+    if (d5_abv > 0 && d6_abv < 0){
+          tabs[4].style.backgroundColor = "white";
+          tabs[4].style.color = "black" }
+    else {tabs[4].style.backgroundColor = "black";
+          tabs[4].style.color = "white" };
+  }
+  window.onscroll = function(){scroll_hl()}
 </script>
 <div id="main" style="margin-left:55px; top:0">
 <div id = "abt" class="container-fluid" style ="z-index:10; top: 0;margin-left: 0;margin-right: 0;padding-left: 15px;padding-right: 15px;background-color:rgba(0, 50, 98, 0.95); background: url(https://drive.google.com/uc?id=12OQM-wdyb4cl9U2aKmTPiSwEeh-nR66A); background-position:center; background-size:cover; color:white; font-size:1.1em; font-family:'Josefin Sans', sans-serif; "> 
